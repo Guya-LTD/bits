@@ -28,6 +28,38 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "guya-ltd.gcss/molecules/blockquote@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/molecules/Blockquote/Blockquote.js",
+                "test": false,
+                "name": "Blockquote.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Blockquote/__Body/BlockquoteBody.js",
+                "test": false,
+                "name": "BlockquoteBody.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Blockquote/__Footer/BlockquoteFooter.js",
+                "test": false,
+                "name": "BlockquoteFooter.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Blockquote/__Header/BlockquoteHeader.js",
+                "test": false,
+                "name": "BlockquoteHeader.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Blockquote/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/molecules/Blockquote/index.js",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "guya-ltd.gcss/molecules/logo@0.0.1": {
         "files": [
             {
