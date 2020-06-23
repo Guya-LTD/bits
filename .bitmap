@@ -28,6 +28,23 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "guya-ltd.gcss/atoms/image@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/atoms/Image/Image.js",
+                "test": false,
+                "name": "Image.js"
+            },
+            {
+                "relativePath": "src/components/atoms/Image/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/atoms/Image/index.js",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "guya-ltd.gcss/molecules/blockquote@0.0.1": {
         "files": [
             {
