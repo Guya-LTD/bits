@@ -28,5 +28,22 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "guya-ltd.gcss/molecules/logo@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/molecules/Logo/Logo.js",
+                "test": false,
+                "name": "Logo.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Logo/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/molecules/Logo/index.js",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "version": "14.7.6"
 }
