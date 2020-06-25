@@ -9,8 +9,10 @@ function App() {
     <div>
       <Button>Button</Button>
       <Button size='sm'>Small</Button>
-      <Button icon={<i>ICON</i>}>Button</Button>
+      <Button icon={<i>ICON</i>}>Button</Button>  
+      <Button theme='royal-blue'>Royal Blue</Button> 
       <Button type='link' href='http://a.com'>A Link</Button>
+      <Button theme='royal-blue' type='link' href='http://a.com'>Royal Blue</Button>
       <Logo />
       <Blockquote 
         header={<h1>Header</h1>}

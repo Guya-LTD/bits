@@ -16,11 +16,11 @@ import React from 'react';
  * @example 
  */
 
-const ButtonLink = ({cn, href, children}) => {
+const ButtonLink = ({cn, theme, href, children}) => {
     /* Class names collection */
     const classname = cn({'': 'link'})
 
-    return <a href={href} className={classname}>{children}</a>
+    return <a href={href} className={classname + theme}>{children}</a>
 }
 
 /**
