@@ -94,22 +94,22 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/styles/flexbox@0.0.1": {
+    "guya-ltd.gcss/styles/flexbox@0.0.2": {
         "files": [
             {
+                "name": "Flexbox.js",
                 "relativePath": "src/components/styles/Flexbox/Flexbox.js",
-                "test": false,
-                "name": "Flexbox.js"
+                "test": false
             },
             {
+                "name": "flexboxgrid.css",
                 "relativePath": "src/components/styles/Flexbox/flexboxgrid.css",
-                "test": false,
-                "name": "flexboxgrid.css"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/styles/Flexbox/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             }
         ],
         "mainFile": "src/components/styles/Flexbox/index.js",
