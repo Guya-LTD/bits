@@ -24,7 +24,7 @@ import ButtonIcon from './__Icon/ButtonIcon';
 class Button extends Component {
     render() {
         /* Props */
-        const {bsPrefix, children, size, type, href, icon} = this.props;
+        const {bsPrefix, children, size, type, href, icon, theme} = this.props;
 
         /* Class name generator */
         const cn = withNaming({ e: '__', m: '', v: '--' })
@@ -32,11 +32,19 @@ class Button extends Component {
         /* Set base classname */
         let classname = cn(bsPrefix)
 
+        /* Theme */
+        let themeName;
+
+        if(theme)
+            themeName = ' '.concat('theme-', theme)
+        else
+            themeName = ''
+
         if(href && type === 'link')
-            return <ButtonLink cn={classname} children={children} href={href} />
+            return <ButtonLink cn={classname} theme={themeName} children={children} href={href} />
         else
             return (
-                <button type={type} className={classname({'': size})}>
+                <button type={type} className={classname({'': size}) + themeName}>
                     {!!(icon)? <ButtonIcon cn={classname} icon={icon} /> : null}
                     {children}
                 </button>
@@ -80,7 +88,13 @@ Button.propTypes = {
      * @property {node}
      * @default null
      */
-    icon: PropTypes.node
+    icon: PropTypes.node,
+    /**
+     * @description Theme.
+     * @enum {('theme-red'|'theme-royal-blue')}
+     * @default null
+     */
+    theme: PropTypes.oneOf(['red', 'royal-blue']),
 }
 
 Button.defaultProps = {
@@ -90,6 +104,7 @@ Button.defaultProps = {
     type: 'button',
     href: null,
     icon: null,
+    theme: null,
 }
 
 /**
