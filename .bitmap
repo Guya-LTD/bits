@@ -94,7 +94,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/styles/flexbox@0.0.1": {
+    "guya-ltd.gcss/styles/flexbox@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/styles/Flexbox/Flexbox.js",
