@@ -3,6 +3,7 @@ import React from 'react';
 import Button from './components/atoms/Button';
 import Logo from './components/molecules/Logo';
 import Blockquote from './components/molecules/Blockquote';
+import './components/styles/Flexbox';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         body={<p>Body</p>}
         footer={<span>Footer</span>}
       />
+      <div class='row col-xs-1'>
+        <Button />
+      </div>
     </div>
   );
 }
