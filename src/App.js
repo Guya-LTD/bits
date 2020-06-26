@@ -3,7 +3,7 @@ import React from 'react';
 import Button from './components/atoms/Button';
 import Logo from './components/molecules/Logo';
 import Blockquote from './components/molecules/Blockquote';
-import './components/styles/Flexbox';
+import LoginTemplate from './components/templates/landing/Login';
 
 function App() {
   return (
@@ -22,6 +22,13 @@ function App() {
       />
       <div class='row col-xs-1'>
         <Button />
+      </div>
+      <div>
+        <LoginTemplate 
+          header={<h1>Header</h1>}
+          body={<p>Body</p>}
+          footer={{right: <p>Right</p>, left: <p>Left</p>}}
+        />
       </div>
     </div>
   );
