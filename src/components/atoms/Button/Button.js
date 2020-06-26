@@ -25,7 +25,7 @@ import ButtonIcon from './__Icon/ButtonIcon';
 class Button extends Component {
     render() {
         /* Props */
-        const {bsPrefix, children, size, type, href, icon, theme, variant} = this.props;
+        const {bsPrefix, children, size, type, href, icon, theme, variant, block} = this.props;
 
         /* Class name generator */
         const cn = withNaming({ e: '__', m: '', v: '--' })
@@ -33,18 +33,17 @@ class Button extends Component {
         /* Set base classname */
         let classname = cn(bsPrefix)
 
-        /* Theme */
-        let themeName;
+        /* Theme name */
+        const themeName = theme ? 'theme-' + theme : null
 
-        if(theme)
-            themeName = ' '.concat('theme-', theme)
-        else
-            themeName = ''
+        /* Block name */
+        const blockName = block ? 'block' : null;
 
         /* Classnames */
         const classnametext = classnames(
             classname({'': size}),
             classname({'': variant}),
+            classname({'': blockName}),
             themeName
         );
 
@@ -109,6 +108,7 @@ Button.propTypes = {
      * @default null
      */
     variant: PropTypes.oneOf(['primary', 'success', 'warning', 'danger']),
+    block: PropTypes.bool,
 }
 
 Button.defaultProps = {
