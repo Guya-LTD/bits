@@ -4,24 +4,24 @@
     "guya-ltd.gcss/atoms/button@0.0.3": {
         "files": [
             {
+                "name": "Button.js",
                 "relativePath": "src/components/atoms/Button/Button.js",
-                "test": false,
-                "name": "Button.js"
+                "test": false
             },
             {
+                "name": "ButtonLink.js",
                 "relativePath": "src/components/atoms/Button/_Link/ButtonLink.js",
-                "test": false,
-                "name": "ButtonLink.js"
+                "test": false
             },
             {
+                "name": "ButtonIcon.js",
                 "relativePath": "src/components/atoms/Button/__Icon/ButtonIcon.js",
-                "test": false,
-                "name": "ButtonIcon.js"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/atoms/Button/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             }
         ],
         "mainFile": "src/components/atoms/Button/index.js",
