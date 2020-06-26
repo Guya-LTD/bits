@@ -9,6 +9,7 @@ function App() {
   return (
     <div>
       <Button>Button</Button>
+      <Button size='sm' variant='primary'>Primary</Button>
       <Button size='sm'>Small</Button>
       <Button icon={<i>ICON</i>}>Button</Button>  
       <Button theme='royal-blue'>Royal Blue</Button> 

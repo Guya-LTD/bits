@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { withNaming } from '@bem-react/classname'
+import { withNaming } from '@bem-react/classname';
+import { classnames } from '@bem-react/classnames'
 
 import ButtonLink from './_Link/ButtonLink';
 import ButtonIcon from './__Icon/ButtonIcon';
@@ -24,7 +25,7 @@ import ButtonIcon from './__Icon/ButtonIcon';
 class Button extends Component {
     render() {
         /* Props */
-        const {bsPrefix, children, size, type, href, icon, theme} = this.props;
+        const {bsPrefix, children, size, type, href, icon, theme, variant} = this.props;
 
         /* Class name generator */
         const cn = withNaming({ e: '__', m: '', v: '--' })
@@ -40,11 +41,18 @@ class Button extends Component {
         else
             themeName = ''
 
+        /* Classnames */
+        const classnametext = classnames(
+            classname({'': size}),
+            classname({'': variant}),
+            themeName
+        );
+
         if(href && type === 'link')
             return <ButtonLink cn={classname} theme={themeName} children={children} href={href} />
         else
             return (
-                <button type={type} className={classname({'': size}) + themeName}>
+                <button type={type} className={classnametext}>
                     {!!(icon)? <ButtonIcon cn={classname} icon={icon} /> : null}
                     {children}
                 </button>
@@ -94,7 +102,13 @@ Button.propTypes = {
      * @enum {('theme-red'|'theme-royal-blue')}
      * @default null
      */
-    theme: PropTypes.oneOf(['red', 'royal-blue']),
+    theme: PropTypes.oneOf(['theme-red', 'theme-royal-blue']),
+    /**
+     * @description Variant colors.
+     * @enum {('primary'|'success'|'warning'|'danger')}
+     * @default null
+     */
+    variant: PropTypes.oneOf(['primary', 'success', 'warning', 'danger']),
 }
 
 Button.defaultProps = {
