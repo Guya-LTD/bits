@@ -94,6 +94,43 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "guya-ltd.gcss/organisms/card@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/organisms/Card/Card.js",
+                "test": false,
+                "name": "Card.js"
+            },
+            {
+                "relativePath": "src/components/organisms/Card/__Body/CardBody.js",
+                "test": false,
+                "name": "CardBody.js"
+            },
+            {
+                "relativePath": "src/components/organisms/Card/__Footer/CardFooter.js",
+                "test": false,
+                "name": "CardFooter.js"
+            },
+            {
+                "relativePath": "src/components/organisms/Card/__Header/CardHeader.js",
+                "test": false,
+                "name": "CardHeader.js"
+            },
+            {
+                "relativePath": "src/components/organisms/Card/__Image/CardImage.js",
+                "test": false,
+                "name": "CardImage.js"
+            },
+            {
+                "relativePath": "src/components/organisms/Card/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/organisms/Card/index.js",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "guya-ltd.gcss/styles/flexbox@0.0.2": {
         "files": [
             {
