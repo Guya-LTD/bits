@@ -195,5 +195,52 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "molecules/navbar@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/molecules/Navbar/Navbar.js",
+                "test": false,
+                "name": "Navbar.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Navbar/__Brand/NavbarBrand.js",
+                "test": false,
+                "name": "NavbarBrand.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Navbar/__Brand/__Large/NavbarBrandLarge.js",
+                "test": false,
+                "name": "NavbarBrandLarge.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Navbar/__Brand/__Small/NavbarBrandSmall.js",
+                "test": false,
+                "name": "NavbarBrandSmall.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Navbar/__Menu/NavbarMenu.js",
+                "test": false,
+                "name": "NavbarMenu.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Navbar/__Menu/__Left/NavbarMenuLeft.js",
+                "test": false,
+                "name": "NavbarMenuLeft.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Navbar/__Menu/__Right/NavbarMenuRight.js",
+                "test": false,
+                "name": "NavbarMenuRight.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Navbar/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/molecules/Navbar/index.js",
+        "origin": "AUTHORED",
+        "exported": false
+    },
     "version": "14.7.6"
 }
