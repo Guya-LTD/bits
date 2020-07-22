@@ -10,7 +10,7 @@ import { withNaming } from '@bem-react/classname'
  * @project Guya E-commerce & Guya Express
  * @see [Github](https://github.com/Guya-LTD/bits)
  * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
- * @description A Button component represents an object or entity.
+ * @description An Image component represents an object or entity.
  * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
  * @component Image
  * @name Image
@@ -21,7 +21,7 @@ import { withNaming } from '@bem-react/classname'
 class Image extends Component {
     render() {
         /* Props */
-        const {bsPrefix, alt, src} = this.props;
+        const {bsPrefix, alt, src, size} = this.props;
 
         /* Class name generator */
         const cn = withNaming({ e: '__', m: '', v: '--' })
