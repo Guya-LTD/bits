@@ -28,17 +28,17 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/atoms/image@0.0.1": {
+    "guya-ltd.gcss/atoms/image@0.0.2": {
         "files": [
             {
+                "name": "Image.js",
                 "relativePath": "src/components/atoms/Image/Image.js",
-                "test": false,
-                "name": "Image.js"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/atoms/Image/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             }
         ],
         "mainFile": "src/components/atoms/Image/index.js",
