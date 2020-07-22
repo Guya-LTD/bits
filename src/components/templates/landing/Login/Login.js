@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withNaming } from '@bem-react/classname'
 
-import Flexbox from  '@bit/guya-ltd.gcss.styles.flexbox';
 import LoginHeader from './__Header/LoginHeader';
 import LoginBody from './__Body/LoginBody';
 import LoginFooter from './__Footer/LoginFooter';
