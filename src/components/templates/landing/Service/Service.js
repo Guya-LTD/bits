@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withNaming } from '@bem-react/classname'
 
-import LoginHeader from './__Header/LoginHeader';
-import LoginBody from './__Body/LoginBody';
-import LoginFooter from './__Footer/LoginFooter';
+import Flexbox from  '@bit/guya-ltd.gcss.styles.flexbox';
+import ServiceHeader from './__Header/ServiceHeader';
+import ServiceHero from './__Hero/ServiceHero';
 
 /**
  * A Layout component represents an object or entity.
@@ -16,16 +16,16 @@ import LoginFooter from './__Footer/LoginFooter';
  * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
  * @description A Layout component represents an object or entity.
  * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
- * @component Login
- * @name Login
+ * @component Service
+ * @name Service
  * @private
  * @example 
  */
 
-class Login extends Component {
+class Service extends Component {
     render() {
         /* Props */
-        const {bsPrefix, header, body, footer,} = this.props;
+        const {bsPrefix, header, hero} = this.props;
 
         /* Class name generator */
         const cn = withNaming({ e: '__', m: '', v: '--' })
@@ -33,53 +33,42 @@ class Login extends Component {
         /* Set base classname */
         let classname = cn(bsPrefix)
 
-        /* Additional classnames */
-        const flexboxClass = ' '.concat('row center-xs');
-
         return (
-            <div className={classname() + flexboxClass}>
-                <div class='col-xs-11 col-sm-3 col-lg-3'>
-                    {!!(header)? <LoginHeader cn={classname} content={header} /> : null}
-                    {!!(body)? <LoginBody cn={classname} content={body} /> : null}
-                    {!!(footer)? <LoginFooter cn={classname} content={footer} /> : null}
-                </div>
+            <div>
+                {!!(header)? <ServiceHeader cn={classname} content={header} /> : null}
+                <main role="main">
+                    {!!(hero)? <ServiceHero cn={classname} content={hero} /> : null}
+                </main>
             </div>
         )
     }
 }
 
-Login.propTypes = {
+Service.propTypes = {
     /**
      * @description Base class name.
      * @property {string}
-     * @default 'login' 
+     * @default 'service' 
      */
     bsPrefix: PropTypes.string,
     /**
-     * @description The blockquote header.
+     * @description Services header.
      * @property {node}
      * @default null
      */
     header: PropTypes.node,
     /**
-     * @description The blockquote body.
+     * @description Service Hero.
      * @property {node}
      * @default null
      */
-    body: PropTypes.node,
-    /**
-     * @description The blockquote footer.
-     * @property {node}
-     * @default null
-     */
-    footer: PropTypes.object,
+    hero: PropTypes.node,
 }
 
-Login.defaultProps = {
-    bsPrefix: 'login',
+Service.defaultProps = {
+    bsPrefix: 'service',
     header: null,
-    body: null,
-    footer: null,
+    hero: null,
 }
 
 /**
@@ -87,4 +76,4 @@ Login.defaultProps = {
  * @public
  */
 
-export default Login;
+export default Service;

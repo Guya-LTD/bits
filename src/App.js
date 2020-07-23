@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Navbar from './components/molecules/Navbar';
+import Field from './components/molecules/Field';
 
 function App() {
   const leftMenus = [
@@ -20,6 +21,7 @@ function App() {
   return (
     <div>
       <Navbar brand={brand} menus={menus}/>
+      <Field />
     </div>
   );
 }

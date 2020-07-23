@@ -20,9 +20,9 @@ import { classnames } from '@bem-react/classnames'
  */
 
 class Input extends Component {
-    ender() {
+    render() {
         /* Props */
-        const {bsPrefix, value, placeholder, required, size, block} = this.props;
+        const {bsPrefix, value, placeholder, required, size, block, type} = this.props;
 
         /* Class name generator */
         const cn = withNaming({ e: '__', m: '', v: '--' })

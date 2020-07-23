@@ -28,7 +28,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/atoms/image@0.0.1": {
+    "guya-ltd.gcss/atoms/image@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/atoms/Image/Image.js",
@@ -42,6 +42,70 @@
             }
         ],
         "mainFile": "src/components/atoms/Image/index.js",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "guya-ltd.gcss/atoms/input@0.0.2": {
+        "files": [
+            {
+                "relativePath": "src/components/atoms/Input/Input.js",
+                "test": false,
+                "name": "Input.js"
+            },
+            {
+                "relativePath": "src/components/atoms/Input/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/atoms/Input/index.js",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "guya-ltd.gcss/atoms/typography@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/atoms/Typography/Typography.js",
+                "test": false,
+                "name": "Typography.js"
+            },
+            {
+                "relativePath": "src/components/atoms/Typography/_H1/TypographyH1.js",
+                "test": false,
+                "name": "TypographyH1.js"
+            },
+            {
+                "relativePath": "src/components/atoms/Typography/_H2/TypographyH2.js",
+                "test": false,
+                "name": "TypographyH2.js"
+            },
+            {
+                "relativePath": "src/components/atoms/Typography/_H3/TypographyH3.js",
+                "test": false,
+                "name": "TypographyH3.js"
+            },
+            {
+                "relativePath": "src/components/atoms/Typography/_H4/TypographyH4.js",
+                "test": false,
+                "name": "TypographyH4.js"
+            },
+            {
+                "relativePath": "src/components/atoms/Typography/_H5/TypographyH5.js",
+                "test": false,
+                "name": "TypographyH5.js"
+            },
+            {
+                "relativePath": "src/components/atoms/Typography/_H6/TypographyH6.js",
+                "test": false,
+                "name": "TypographyH6.js"
+            },
+            {
+                "relativePath": "src/components/atoms/Typography/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/atoms/Typography/index.js",
         "origin": "AUTHORED",
         "exported": true
     },
@@ -77,6 +141,33 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "guya-ltd.gcss/molecules/field@0.0.2": {
+        "files": [
+            {
+                "relativePath": "src/components/molecules/Field/Field.js",
+                "test": false,
+                "name": "Field.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Field/__Description/FieldDescription.js",
+                "test": false,
+                "name": "FieldDescription.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Field/__Label/FieldLabel.js",
+                "test": false,
+                "name": "FieldLabel.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Field/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/molecules/Field/index.js",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "guya-ltd.gcss/molecules/logo@0.0.1": {
         "files": [
             {
@@ -91,6 +182,53 @@
             }
         ],
         "mainFile": "src/components/molecules/Logo/index.js",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "guya-ltd.gcss/molecules/navbar@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/molecules/Navbar/Navbar.js",
+                "test": false,
+                "name": "Navbar.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Navbar/__Brand/NavbarBrand.js",
+                "test": false,
+                "name": "NavbarBrand.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Navbar/__Brand/__Large/NavbarBrandLarge.js",
+                "test": false,
+                "name": "NavbarBrandLarge.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Navbar/__Brand/__Small/NavbarBrandSmall.js",
+                "test": false,
+                "name": "NavbarBrandSmall.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Navbar/__Menu/NavbarMenu.js",
+                "test": false,
+                "name": "NavbarMenu.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Navbar/__Menu/__Left/NavbarMenuLeft.js",
+                "test": false,
+                "name": "NavbarMenuLeft.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Navbar/__Menu/__Right/NavbarMenuRight.js",
+                "test": false,
+                "name": "NavbarMenuRight.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Navbar/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/molecules/Navbar/index.js",
         "origin": "AUTHORED",
         "exported": true
     },
@@ -153,7 +291,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/templates/landing/login@0.0.1": {
+    "guya-ltd.gcss/templates/landing/login@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/templates/landing/Login/Login.js",
@@ -195,52 +333,5 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "molecules/navbar@0.0.1": {
-        "files": [
-            {
-                "relativePath": "src/components/molecules/Navbar/Navbar.js",
-                "test": false,
-                "name": "Navbar.js"
-            },
-            {
-                "relativePath": "src/components/molecules/Navbar/__Brand/NavbarBrand.js",
-                "test": false,
-                "name": "NavbarBrand.js"
-            },
-            {
-                "relativePath": "src/components/molecules/Navbar/__Brand/__Large/NavbarBrandLarge.js",
-                "test": false,
-                "name": "NavbarBrandLarge.js"
-            },
-            {
-                "relativePath": "src/components/molecules/Navbar/__Brand/__Small/NavbarBrandSmall.js",
-                "test": false,
-                "name": "NavbarBrandSmall.js"
-            },
-            {
-                "relativePath": "src/components/molecules/Navbar/__Menu/NavbarMenu.js",
-                "test": false,
-                "name": "NavbarMenu.js"
-            },
-            {
-                "relativePath": "src/components/molecules/Navbar/__Menu/__Left/NavbarMenuLeft.js",
-                "test": false,
-                "name": "NavbarMenuLeft.js"
-            },
-            {
-                "relativePath": "src/components/molecules/Navbar/__Menu/__Right/NavbarMenuRight.js",
-                "test": false,
-                "name": "NavbarMenuRight.js"
-            },
-            {
-                "relativePath": "src/components/molecules/Navbar/index.js",
-                "test": false,
-                "name": "index.js"
-            }
-        ],
-        "mainFile": "src/components/molecules/Navbar/index.js",
-        "origin": "AUTHORED",
-        "exported": false
-    },
-    "version": "14.7.6"
+    "version": "14.8.8"
 }

@@ -32,7 +32,8 @@ class Field extends Component {
                value, 
                placeholder, 
                required, 
-               size, 
+               size,
+               type,
                block} = this.props;
 
         /* Class name generator */
@@ -98,8 +99,8 @@ Field.propTypes = {
 
 Field.defaultProps = {
     bsPrefix: 'field',
-    label: null,
-    description: null,
+    label: 'Input',
+    description: 'Input small description text',
     size: 'md',
     type: 'text',
     value: null,
