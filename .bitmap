@@ -62,6 +62,23 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "guya-ltd.gcss/atoms/link@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/atoms/Link/Link.js",
+                "test": false,
+                "name": "Link.js"
+            },
+            {
+                "relativePath": "src/components/atoms/Link/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/atoms/Link/index.js",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "guya-ltd.gcss/atoms/typography@0.0.1": {
         "files": [
             {
