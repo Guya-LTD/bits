@@ -17,8 +17,11 @@ import React from 'react';
  */
 
 const LoginBody = ({content}) => {
+    /* Class names collection */
+    const classname = cn('body');
+
     return (
-        <div>
+        <div className={classname}>
             {content}
         </div>
     )

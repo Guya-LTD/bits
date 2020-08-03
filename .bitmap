@@ -308,42 +308,42 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/templates/landing/login@0.0.2": {
+    "guya-ltd.gcss/templates/landing/login@0.0.4": {
         "files": [
             {
+                "name": "Login.js",
                 "relativePath": "src/components/templates/landing/Login/Login.js",
-                "test": false,
-                "name": "Login.js"
+                "test": false
             },
             {
+                "name": "LoginBody.js",
                 "relativePath": "src/components/templates/landing/Login/__Body/LoginBody.js",
-                "test": false,
-                "name": "LoginBody.js"
+                "test": false
             },
             {
+                "name": "LoginFooter.js",
                 "relativePath": "src/components/templates/landing/Login/__Footer/LoginFooter.js",
-                "test": false,
-                "name": "LoginFooter.js"
+                "test": false
             },
             {
+                "name": "LoginFooterLeft.js",
                 "relativePath": "src/components/templates/landing/Login/__Footer/__Left/LoginFooterLeft.js",
-                "test": false,
-                "name": "LoginFooterLeft.js"
+                "test": false
             },
             {
+                "name": "LoginFooterRight.js",
                 "relativePath": "src/components/templates/landing/Login/__Footer/__Right/LoginFooterRight.js",
-                "test": false,
-                "name": "LoginFooterRight.js"
+                "test": false
             },
             {
+                "name": "LoginHeader.js",
                 "relativePath": "src/components/templates/landing/Login/__Header/LoginHeader.js",
-                "test": false,
-                "name": "LoginHeader.js"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/templates/landing/Login/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             }
         ],
         "mainFile": "src/components/templates/landing/Login/index.js",

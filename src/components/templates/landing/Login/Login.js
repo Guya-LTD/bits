@@ -76,7 +76,7 @@ Login.propTypes = {
 }
 
 Login.defaultProps = {
-    bsPrefix: 'login',
+    bsPrefix: 'ad-login',
     header: null,
     body: null,
     footer: null,
