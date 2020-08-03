@@ -308,7 +308,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/templates/landing/login@0.0.4": {
+    "guya-ltd.gcss/templates/landing/login@0.0.5": {
         "files": [
             {
                 "name": "Login.js",

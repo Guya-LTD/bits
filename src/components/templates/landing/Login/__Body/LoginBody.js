@@ -16,7 +16,7 @@ import React from 'react';
  * @example 
  */
 
-const LoginBody = ({content}) => {
+const LoginBody = ({cn, content}) => {
     /* Class names collection */
     const classname = cn('body');
 
