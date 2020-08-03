@@ -62,7 +62,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/atoms/link@0.0.1": {
+    "guya-ltd.gcss/atoms/link@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/atoms/Link/Link.js",
@@ -308,7 +308,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/templates/landing/login@0.0.2": {
+    "guya-ltd.gcss/templates/landing/login@0.0.4": {
         "files": [
             {
                 "relativePath": "src/components/templates/landing/Login/Login.js",
