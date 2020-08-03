@@ -47,11 +47,18 @@ Link.propTypes = {
      * @default 'Link'
      */
     children: PropTypes.string,
+    /**
+     * @description Link.
+     * @property {string}
+     * @default '#'
+     */
+    href: PropTypes.string,
 }
 
 Link.defaultProps = {
     bsPrefix: 'link',
     children: 'Link',
+    href: '#',
 }
 
 /**
