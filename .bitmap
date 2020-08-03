@@ -153,7 +153,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/templates/landing/login@0.0.2": {
+    "guya-ltd.gcss/templates/landing/login@0.0.3": {
         "files": [
             {
                 "name": "Login.js",
