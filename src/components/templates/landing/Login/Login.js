@@ -25,7 +25,7 @@ import LoginFooter from './__Footer/LoginFooter';
 class Login extends Component {
     render() {
         /* Props */
-        const {bsPrefix, header, body, footer,} = this.props;
+        const {bsPrefix, header, children, footer,} = this.props;
 
         /* Class name generator */
         const cn = withNaming({ e: '__', m: '', v: '--' })
@@ -40,7 +40,7 @@ class Login extends Component {
             <div className={classname() + flexboxClass}>
                 <div class='col-xs-11 col-sm-3 col-lg-3'>
                     {!!(header)? <LoginHeader cn={classname} content={header} /> : null}
-                    {!!(body)? <LoginBody cn={classname} content={body} /> : null}
+                    {!!(children)? <LoginBody cn={classname} content={children} /> : null}
                     {!!(footer)? <LoginFooter cn={classname} content={footer} /> : null}
                 </div>
             </div>
@@ -66,7 +66,7 @@ Login.propTypes = {
      * @property {node}
      * @default null
      */
-    body: PropTypes.node,
+    children: PropTypes.node,
     /**
      * @description The blockquote footer.
      * @property {node}
@@ -78,7 +78,7 @@ Login.propTypes = {
 Login.defaultProps = {
     bsPrefix: 'ad-login',
     header: null,
-    body: null,
+    children: null,
     footer: null,
 }
 

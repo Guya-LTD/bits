@@ -5,6 +5,7 @@ import Field from './components/molecules/Field';
 import Link from './components/atoms/Link';
 import FormControl from './components/organisms/FormControl';
 import Button from './components/atoms/Button';
+import LoginTemplate from './components/templates/landing/Login';
 
 
 function App() {
@@ -22,6 +23,11 @@ function App() {
 
   const brand = {small: <p>Small Brand</p>, large: <p>Large Brand</p>}
 
+  const handleSubmit = event => {
+    event.preventDefault();
+    alert('hello');
+  };
+
   return (
     <div>
       <Navbar brand={brand} menus={menus}/>
@@ -29,11 +35,16 @@ function App() {
       <Link />
       <br />
       <p>Form controller</p>
-      <FormControl onSubmit={alert('Hello')}>
+      <FormControl onSubmit={handleSubmit}>
         <Field />
         <Field />
         <Button type='submit' />
       </FormControl>
+      <LoginTemplate 
+          header={<p>Para</p>}
+          footer={<p>foote</p>} >
+            <p>Body</p>
+          </LoginTemplate>
     </div>
   );
 }
