@@ -27,7 +27,7 @@ import CardFooter from './__Footer/CardFooter';
 class Card extends Component {
     render() {
         /* Props */
-        const {bsPrefix, image, header, body, footer, float, block} = this.props;
+        const {bsPrefix, image, header, children, footer, float, block} = this.props;
 
         /* Class name generator */
         const cn = withNaming({ e: '__', m: '', v: '--' })
@@ -51,7 +51,7 @@ class Card extends Component {
             <div className={classnametext}>
                 {!!(image)? <CardImage cn={classname} content={image} /> : null}
                 {!!(header)? <CardHeader cn={classname} content={header} /> : null}
-                {!!(body)? <CardBody cn={classname} content={body} /> : null}
+                {!!(children)? <CardBody cn={classname} content={children} /> : null}
                 {!!(footer)? <CardFooter cn={classname} content={footer} /> : null}
             </div>
         )
@@ -82,7 +82,7 @@ Card.propTypes = {
      * @property {node}
      * @default null
      */
-    body: PropTypes.node,
+    children: PropTypes.node,
     /**
      * @description The Card footer.
      * @property {node}
@@ -107,7 +107,7 @@ Card.defaultProps = {
     bsPrefix: 'card',
     image: null,
     header: null,
-    body: null,
+    children: null,
     footer: null,
 }
 

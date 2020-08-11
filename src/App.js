@@ -6,6 +6,7 @@ import Link from './components/atoms/Link';
 import FormControl from './components/organisms/FormControl';
 import Button from './components/atoms/Button';
 import LoginTemplate from './components/templates/landing/Login';
+import Card from './components/organisms/Card';
 
 
 function App() {
@@ -45,6 +46,9 @@ function App() {
           footer={<p>foote</p>} >
             <p>Body</p>
           </LoginTemplate>
+      <Card>
+        <p>Card body</p>
+      </Card>
     </div>
   );
 }

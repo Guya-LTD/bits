@@ -249,7 +249,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/organisms/card@0.0.1": {
+    "guya-ltd.gcss/organisms/card@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/organisms/Card/Card.js",
