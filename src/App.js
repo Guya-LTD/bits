@@ -3,6 +3,9 @@ import React from 'react';
 import Navbar from './components/molecules/Navbar';
 import Field from './components/molecules/Field';
 import Link from './components/atoms/Link';
+import FormControl from './components/organisms/FormControl';
+import Button from './components/atoms/Button';
+
 
 function App() {
   const leftMenus = [
@@ -24,6 +27,13 @@ function App() {
       <Navbar brand={brand} menus={menus}/>
       <Field />
       <Link />
+      <br />
+      <p>Form controller</p>
+      <FormControl onSubmit={alert('Hello')}>
+        <Field />
+        <Field />
+        <Button type='submit' />
+      </FormControl>
     </div>
   );
 }

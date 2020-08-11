@@ -286,6 +286,23 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "guya-ltd.gcss/organisms/formcontrol@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/organisms/FormControl/FormControl.js",
+                "test": false,
+                "name": "FormControl.js"
+            },
+            {
+                "relativePath": "src/components/organisms/FormControl/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/organisms/FormControl/index.js",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "guya-ltd.gcss/styles/flexbox@0.0.2": {
         "files": [
             {
@@ -308,7 +325,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/templates/landing/login@0.0.4": {
+    "guya-ltd.gcss/templates/landing/login@0.0.5": {
         "files": [
             {
                 "relativePath": "src/components/templates/landing/Login/Login.js",
