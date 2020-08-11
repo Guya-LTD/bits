@@ -41,9 +41,7 @@ function App() {
         <Field />
         <Button type='submit' />
       </FormControl>
-      <LoginTemplate 
-          header={<p>Para</p>}
-          footer={<p>foote</p>} >
+      <LoginTemplate>
             <p>Body</p>
           </LoginTemplate>
       <Card>
