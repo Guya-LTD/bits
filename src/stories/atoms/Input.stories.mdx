@@ -1,0 +1,29 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import Input from '../../components/atoms/Input';
+
+<Meta title="Atoms/Input" component={Input} />
+
+
+# Input
+
+<Canvas>
+    <Story name='Default'>
+        <Input type='text'/>
+    </Story>
+</Canvas>
+
+## Sizes
+
+<Canvas>
+    <Story name='Sizes'>
+        <div>
+            <Input type='text' size='sm' placeholder='Small input'/>
+            <br /><br />
+            <Input type='text' size='md' placeholder='Medium input'/>
+            <br /><br />
+            <Input type='text' size='lg' placeholder='Large input'/>
+        </div>
+    </Story>
+</Canvas>

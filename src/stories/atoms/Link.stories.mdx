@@ -1,3 +1,4 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 
 import Link from '../../components/atoms/Link';
@@ -8,6 +9,8 @@ import Link from '../../components/atoms/Link';
 # Link
 
 Links Documentation
+
+<ArgsTable of={Link} />
 
 ## Default Usage
 
@@ -26,3 +29,29 @@ Links Documentation
         <Link size='lg'>Large</Link>
     </Story>
 </Canvas>
+
+## Themes
+
+### Royal Blue Theme
+
+<Canvas>
+    <Story name='Theme-royal-blue'>
+        <Link theme='royal-blue'>Default</Link>
+    </Story>
+</Canvas> 
+
+### Red Theme
+
+<Canvas>
+    <Story name='Theme-red'>
+        <Link theme='red'>Default</Link>
+    </Story>
+</Canvas> 
+
+### Royal Blue Theme
+
+<Canvas>
+    <Story name='Theme-cornflower-blue'>
+        <Link theme='royal-cornflower-blue'>Default</Link>
+    </Story>
+</Canvas> 

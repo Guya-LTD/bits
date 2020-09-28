@@ -1,0 +1,19 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import LoginTemplate from '../../../../components/templates/landing/Login';
+import Logo from '../../../../components/molecules/Logo';
+
+<Meta title="Pages/Landing/Login" component={LoginTemplate} />
+
+# Login Templates
+
+<Canvas>
+    <Story name='Layout'>
+        <LoginTemplate 
+          header={ <Logo src='/images/admin-panel-logo.png' size='lg'/> }
+          footer={{right: <div class="box"/>, left: <div class="box"/> } } >
+          <div class="box"/>
+        </LoginTemplate>
+    </Story>
+</Canvas> 

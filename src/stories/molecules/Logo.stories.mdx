@@ -1,0 +1,19 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import Logo from '../../components/molecules/Logo';
+
+<Meta title="Molecules/Logo" component={Logo} />
+
+# Logo Links
+A logo is a graphic mark, emblem, or symbol used to aid and promote public 
+identification and recognition. It may be of an abstract or figurative design or 
+include the text of the name it represents as in a wordmark.
+
+<Canvas>
+    <Story name='Admin Panel Logos'>
+        <Logo src='/images/admin-panel-logo.png' size='sm'/>
+        <Logo src='/images/admin-panel-logo.png' size='md'/>
+        <Logo src='/images/admin-panel-logo.png' size='lg'/>
+    </Story>
+</Canvas>
