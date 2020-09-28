@@ -34,6 +34,7 @@ class Field extends Component {
                required, 
                size,
                type,
+               onChange,
                block} = this.props;
 
         /* Class name generator */
@@ -45,7 +46,7 @@ class Field extends Component {
         return (
             <div className={classname()}>
                 {!!(label)? <FieldLabel cn={classname} label={label} /> : null}
-                <Input type={type} placeholder={placeholder} required={required} value={value} size={size} />
+                <Input type={type} placeholder={placeholder} required={required} value={value} size={size} onChang={onChange}/>
                 {!!(description)? <FieldDescription cn={classname} description={description} /> : null}
             </div>
         )
@@ -95,12 +96,18 @@ Field.propTypes = {
      * @default 'md'
      */
     size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
+    /**
+     * @description Onchange.
+     * @property {event}
+     * @default null
+     */
+    //onChange:
 }
 
 Field.defaultProps = {
     bsPrefix: 'field',
     label: 'Input',
-    description: 'Input small description text',
+    description: null,
     size: 'md',
     type: 'text',
     value: null,

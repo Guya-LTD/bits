@@ -22,7 +22,7 @@ import { classnames } from '@bem-react/classnames'
 class Link extends Component {
     render() {
         /* Props */
-        const {bsPrefix, children, href} = this.props;
+        const {bsPrefix, children, href, size} = this.props;
 
         /* Class name generator */
         const cn = withNaming({ e: '__', m: '', v: '--' })

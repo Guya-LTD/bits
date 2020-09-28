@@ -38,7 +38,7 @@ class Login extends Component {
 
         return (
             <div className={classname() + flexboxClass}>
-                <div class='col-xs-11 col-sm-3 col-lg-3'>
+                <div class='col-xs-11 col-sm-3 col-lg-2'>
                     {!!(header)? <LoginHeader cn={classname} content={header} /> : null}
                     {!!(children)? <LoginBody cn={classname} content={children} /> : null}
                     {!!(footer)? <LoginFooter cn={classname} content={footer} /> : null}
