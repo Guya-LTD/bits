@@ -1,0 +1,26 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import Sidebar from '../../components/molecules/Sidebar';
+
+<Meta title="Molecules/Sidebar" component={Sidebar} />
+
+# Sidebar
+
+<Canvas>
+    <Story name='Default'>
+        <Sidebar 
+            theme='royal-blue'
+            menu={
+                {
+                    primary: {
+                        logo: null,
+                        top: <p>top</p>,
+                        bottom: <p>assadf</p>
+                    },
+                    secondary: <p>sdfdsf</p>
+                }
+            }
+        />
+    </Story>
+</Canvas>
