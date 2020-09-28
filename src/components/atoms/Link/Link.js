@@ -22,7 +22,7 @@ import { classnames } from '@bem-react/classnames'
 class Link extends Component {
     render() {
         /* Props */
-        const {bsPrefix, children, href, size, theme} = this.props;
+        const {bsPrefix, children, href, size, theme, variant} = this.props;
 
         /* Class name generator */
         const cn = withNaming({ e: '__', m: '', v: '--' })
@@ -36,6 +36,7 @@ class Link extends Component {
         /* Classnames */
         const classnametext = classnames(
             classname({'': size}),
+            classname({'': variant}),
             themeName
         );
 
