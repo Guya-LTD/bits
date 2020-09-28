@@ -1,0 +1,77 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import Button from '../../components/atoms/Button';
+
+<Meta title="Atoms/Button" component={Button} />
+
+# Button 
+Buttons allow users to take actions, and make choices, with a single tap. 
+The classic `button`, in different colors, sizes, and states.
+
+Buttons communicate actions that users can take. They are typically placed throughout your UI, in places like:
+
+- Dialogs
+- Modal windows
+- Forms
+- Cards
+- Toolbars
+
+## Basic usage
+
+<Canvas>
+    <Story name='Basic'>
+        <div class='wrapper'>
+            <Button>Default</Button>
+            <Button variant='primary'>Primary</Button>
+            <Button variant='success'>Success</Button>
+            <Button variant='warning'>Warning</Button>
+            <Button variant='danger'>Danger</Button>
+        </div>
+    </Story>
+</Canvas>
+
+
+## Sizes
+Fancy larger or smaller buttons? Use the `size` property.
+
+<Canvas>
+    <Story name='Sizes'>
+        <div class='wrapper'>
+            <Button size='sm'>Small</Button>
+            <Button size='md'>Medium</Button>
+            <Button size='lg'>Large</Button>
+        </div>
+    </Story>
+</Canvas>
+
+## Block level
+Create block level buttons—those that span the full width of a parent—by adding `block` property.
+
+<Canvas>
+    <Story name='Block'>
+        <div class='wrapper'>
+            <Button size='sm' block>Small</Button>
+            <Button size='md' block>Medium</Button>
+            <Button size='lg' block>Large</Button>
+        </div>
+    </Story>
+</Canvas>
+
+## Themes
+
+* Royal Blue theme
+* Red theme
+
+### Royal Blue theme
+<Canvas>
+    <Story name='Royal Blue Theme'>
+        <div class='wrapper'>
+            <Button theme='royal-blue'>Default</Button>
+            <Button theme='royal-blue' variant='primary'>Primary</Button>
+            <Button theme='royal-blue' variant='success'>Success</Button>
+            <Button theme='royal-blue' variant='warning'>Warning</Button>
+            <Button theme='royal-blue' variant='danger'>Danger</Button>
+        </div>
+    </Story>
+</Canvas>
+
