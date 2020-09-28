@@ -1,0 +1,34 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import PanelTemplate from '../../../components/templates/home/Panel';
+import Sidebar from '../../../components/molecules/Sidebar';
+
+<Meta title="Pages/Home/Panel" component={PanelTemplate} />
+
+# Login Templates
+
+<Canvas>
+    <Story name='Devault'>
+        <PanelTemplate 
+            sidebar={ 
+                <Sidebar 
+                    theme='royal-blue'
+                    menu={
+                        {
+                            primary: {
+                                logo: null,
+                                top: <p>top</p>,
+                                bottom: <p>assadf</p>
+                            },
+                            secondary: <p>sdfdsf</p>
+                        }
+                    }
+                />
+             }
+            header={ <div class='box' /> }
+            body={ <div class='box' /> }
+            footer={ <div class='box' /> }
+        />
+    </Story>
+</Canvas> 

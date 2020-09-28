@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { withNaming } from '@bem-react/classname'
+import { withNaming } from '@bem-react/classname';
 
 import LoginHeader from './__Header/LoginHeader';
 import LoginBody from './__Body/LoginBody';
