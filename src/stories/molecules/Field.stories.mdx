@@ -3,14 +3,14 @@ import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 
 import Field from '../../components/molecules/Field';
 
-<Meta title="Atoms/Input" component={Field} />
+<Meta title="Molecules/Field" component={Field} />
 
 
 # Input
 
 <Canvas>
     <Story name='Default'>
-        <Input type='text'/>
+        <Field description='Some small text'/>
     </Story>
 </Canvas>
 
@@ -19,7 +19,32 @@ import Field from '../../components/molecules/Field';
 <Canvas>
     <Story name='Sizes'>
         <Field 
-        
+            size='sm'
+            description='Some small text'
         />
+        <Field 
+            size='md'
+            description='Some small text'
+        />
+        <Field 
+            size='lg'
+            description='Some small text'
+        />
+    </Story>
+</Canvas>
+
+## Addons
+
+<Canvas>
+    <Story name='Addon'>
+        <Field 
+            size='sm'
+            addon={ {left: 'L' , right: 'R'} }/>
+        <Field 
+            size='md'
+            description='Some small text' />
+        <Field 
+            size='lg'
+            description='Some small text' />
     </Story>
 </Canvas>
