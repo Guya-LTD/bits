@@ -22,7 +22,7 @@ import { classnames } from '@bem-react/classnames'
 class Link extends Component {
     render() {
         /* Props */
-        const {bsPrefix, children, href, size} = this.props;
+        const {bsPrefix, children, href, size, theme} = this.props;
 
         /* Class name generator */
         const cn = withNaming({ e: '__', m: '', v: '--' })
@@ -30,7 +30,16 @@ class Link extends Component {
         /* Set base classname */
         let classname = cn(bsPrefix)
 
-        return ( <a className={classname()} href={href}>{children}</a>)
+        /* Theme name */
+        const themeName = theme ? 'theme-' + theme : null
+
+        /* Classnames */
+        const classnametext = classnames(
+            classname({'': size}),
+            themeName
+        );
+
+        return ( <a className={classnametext} href={href}>{children}</a>)
     }
 }
 
@@ -53,12 +62,25 @@ Link.propTypes = {
      * @default '#'
      */
     href: PropTypes.string,
+    /**
+     * @description Size.
+     * @enum {('xs'|'sm'|'md'|'lg'|'xl')}
+     * @default 'md'
+     */
+    size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
+    /**
+     * @description Theme.
+     * @enum {('theme-red'|'theme-royal-blue'|'cornflower-blue')}
+     * @default null
+     */
+    theme: PropTypes.oneOf(['theme-red', 'theme-royal-blue']),
 }
 
 Link.defaultProps = {
     bsPrefix: 'link',
     children: 'Link',
     href: '#',
+    size: 'md'
 }
 
 /**
