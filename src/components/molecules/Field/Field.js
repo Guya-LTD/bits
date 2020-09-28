@@ -5,7 +5,9 @@ import { classnames } from '@bem-react/classnames'
 
 import Input from '../../atoms/Input';
 import FieldLabel from './__Label/FieldLabel';
-import FieldDescription from './__Description/FieldDescription'
+import FieldDescription from './__Description/FieldDescription';
+import FieldAddonRight from './__Addon/__Right/FieldAddonRight';
+import FieldAddonLeft from './__Addon/__Left/FieldAddonLeft';
 
 /**
  * A Field component represents an object or entity.
@@ -35,6 +37,7 @@ class Field extends Component {
                size,
                type,
                onChange,
+               addon,
                block} = this.props;
 
         /* Class name generator */
@@ -43,10 +46,24 @@ class Field extends Component {
         /* Set base classname */
         let classname = cn(bsPrefix)
 
+        /* Left Addon */
+        const hasLeftAddon = addon.left ? classname({'': 'addon-left'}) : null;
+
+        /* Right Addon */
+        const hasRightAddon = addon.right ? classname({'': 'addon-right'}) : null;
+
+        /* Classnames */
+        const classnametext = classnames(
+            hasLeftAddon,
+            hasRightAddon
+        );
+
         return (
-            <div className={classname()}>
+            <div className={classnametext}>
                 {!!(label)? <FieldLabel cn={classname} label={label} /> : null}
-                <Input type={type} placeholder={placeholder} required={required} value={value} size={size} onChang={onChange}/>
+                {!!(addon.left)? <FieldAddonLeft cn={classname} addon={addon.left} /> : null}
+                <Input type={type} placeholder={placeholder} required={required} value={value} size={size} onChang={onChange} block/>
+                {!!(addon.right)? <FieldAddonRight cn={classname} addon={addon.right} /> : null}
                 {!!(description)? <FieldDescription cn={classname} description={description} /> : null}
             </div>
         )
@@ -112,6 +129,7 @@ Field.defaultProps = {
     type: 'text',
     value: null,
     placeholder: 'Input Text',
+    addon: {left: null, right: null}
 }
 
 /**
