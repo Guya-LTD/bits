@@ -62,7 +62,7 @@ class Field extends Component {
             <div className={classnametext}>
                 {!!(label)? <FieldLabel cn={classname} label={label} /> : null}
                 {!!(addon.left)? <FieldAddonLeft cn={classname} addon={addon.left} /> : null}
-                <Input type={type} placeholder={placeholder} required={required} value={value} size={size} onChang={onChange} block/>
+                <Input type={type} placeholder={placeholder} required={required} value={value} size={size} onChange={onChange} block/>
                 {!!(addon.right)? <FieldAddonRight cn={classname} addon={addon.right} /> : null}
                 {!!(description)? <FieldDescription cn={classname} description={description} /> : null}
             </div>
