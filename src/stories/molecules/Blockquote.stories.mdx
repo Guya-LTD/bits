@@ -1,0 +1,60 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import Blockquote from '../../components/molecules/Blockquote';
+
+<Meta title="Molecules/Blockquote" component={Blockquote} />
+
+
+# Blockquote
+
+<Canvas>
+    <Story name='Default'>
+        <Blockquote
+            header={<p>Header</p>}
+            body={<p>Body</p>}
+            footer={<p>Footer</p>}
+         />
+    </Story>
+</Canvas>
+
+# Sizes
+
+<Canvas>
+    <Story name='sizes'>
+        <Blockquote
+            size='sm'
+            header={<p>Header</p>}
+            body={<p>Body</p>}
+            footer={<p>Footer</p>}
+         />
+    </Story>
+</Canvas>
+
+## Types
+
+<Canvas>
+    <Story name='Notification'>
+        <Blockquote
+            type='notification'
+            header={<p>Header</p>}
+            body={<p>Body</p>}
+            footer={<p>Footer</p>}
+         />
+    </Story>
+</Canvas>
+
+
+## Specfics
+
+<Canvas>
+    <Story name='Royal-blue-login-error'>
+        <Blockquote
+            type='notification'
+            theme='royal-blue'
+            variant='danger'
+            header={<p>Header</p>}
+            body={<p>Body</p>}
+         />
+    </Story>
+</Canvas>

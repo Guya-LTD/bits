@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { withNaming } from '@bem-react/classname'
+import { withNaming } from '@bem-react/classname';
+import { classnames } from '@bem-react/classnames';
 
 import BlockquoteHeader from './__Header/BlockquoteHeader';
 import BlockquoteBody from './__Body/BlockquoteBody';
@@ -25,7 +26,7 @@ import BlockquoteFooter from './__Footer/BlockquoteFooter';
 class Blockquote extends Component {
     render() {
         /* Props */
-        const {bsPrefix, header, body, footer,} = this.props;
+        const {bsPrefix, header, body, footer, size, variant, type, theme} = this.props;
 
         /* Class name generator */
         const cn = withNaming({ e: '__', m: '', v: '--' })
@@ -33,8 +34,19 @@ class Blockquote extends Component {
         /* Set base classname */
         let classname = cn(bsPrefix)
 
+        /* Theme name */
+        const themeName = theme ? 'theme-' + theme : null
+
+        /* Classnames */
+        const classnametext = classnames(
+            classname({'': size}),
+            classname({'': variant}),
+            classname({'': type}),
+            themeName
+        );
+
         return (
-            <div className={classname()}>
+            <div className={classnametext}>
                 {!!(header)? <BlockquoteHeader cn={classname} content={header} /> : null}
                 {!!(body)? <BlockquoteBody cn={classname} content={body} /> : null}
                 {!!(footer)? <BlockquoteFooter cn={classname} content={footer} /> : null}
