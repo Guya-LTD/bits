@@ -22,7 +22,7 @@ import { classnames } from '@bem-react/classnames'
 class Input extends Component {
     render() {
         /* Props */
-        const {bsPrefix, value, placeholder, required, size, block, type, onChange} = this.props;
+        const {bsPrefix, value, placeholder, required, size, block, type, onChange, theme} = this.props;
 
         /* Class name generator */
         const cn = withNaming({ e: '__', m: '', v: '--' })
@@ -33,10 +33,14 @@ class Input extends Component {
         /* Block name */
         const blockName = block ? 'block' : null;
 
+        /* Theme name */
+        const themeName = theme ? 'theme-' + theme : null
+
         /* Classnames */
         const classnametext = classnames(
             classname({'': size}),
             classname({'': blockName}),
+            themeName
         );
 
         return ( <input className={classnametext} 
