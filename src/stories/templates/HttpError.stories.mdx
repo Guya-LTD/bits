@@ -1,0 +1,20 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import HttpError from '../../components/templates/HttpError';
+
+<Meta title="Templates/HttpError" component={HttpError} />
+
+# HttpError Page
+
+<ArgsTable of={HttpError} />
+
+<Canvas>
+    <Story name='Default'>
+        <HttpError 
+            status={<div class='box' />}       
+            status_code=''
+            description={<div class='box' />}
+         />
+    </Story>
+</Canvas>
