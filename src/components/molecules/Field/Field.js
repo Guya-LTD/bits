@@ -38,6 +38,7 @@ class Field extends Component {
                type,
                onChange,
                addon,
+               theme,
                block} = this.props;
 
         /* Class name generator */
@@ -52,17 +53,21 @@ class Field extends Component {
         /* Right Addon */
         const hasRightAddon = addon.right ? classname({'': 'addon-right'}) : null;
 
+        /* Theme name */
+        const themeName = theme ? 'theme-' + theme : null
+
         /* Classnames */
         const classnametext = classnames(
             hasLeftAddon,
-            hasRightAddon
+            hasRightAddon,
+            themeName
         );
 
         return (
             <div className={classnametext}>
                 {!!(label)? <FieldLabel cn={classname} label={label} /> : null}
                 {!!(addon.left)? <FieldAddonLeft cn={classname} addon={addon.left} /> : null}
-                <Input type={type} placeholder={placeholder} required={required} value={value} size={size} onChange={onChange} block/>
+                <Input type={type} placeholder={placeholder} required={required} value={value} size={size} onChange={onChange} block theme={theme}/>
                 {!!(addon.right)? <FieldAddonRight cn={classname} addon={addon.right} /> : null}
                 {!!(description)? <FieldDescription cn={classname} description={description} /> : null}
             </div>
