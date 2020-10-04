@@ -32,7 +32,7 @@ const SidebarMenuPrimary = ({cn, content}) => {
     classname = classname('primary');
 
     return (
-        <div className={classname}>
+        <div className={classname} style={{ height: '1136px'}}>
             {!!(content.logo)? <SidebarMenuPriamryLogo cn={classname} content={content.logo} /> : null}
             {!!(content.top)? <SidebarMenuPriamryTop cn={classname} content={content.top} /> : null}
             {!!(content.bottom)? <SidebarMenuPriamryBottom cn={classname} content={content.bottom} /> : null}

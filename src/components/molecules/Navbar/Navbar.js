@@ -31,9 +31,10 @@ class Navbar extends Component {
 
         /* Set base classname */
         let classname = cn(bsPrefix)
-
+            menus = { firstRow: {collapse, theme, size, brand: {open, small, large, search} } }
         return (
-            <nav class={classname()}>
+            <nav class={classname()} id='navbar'>
+                <button class='navbar__close' onclick='closeNavbar(this)'>X</button>
                 {!!(brand)? <NavbarBrand cn={classname} content={brand} /> : null}
                 {!!(menus)? <NavbarMenu cn={classname} content={menus} /> : null}
             </nav>

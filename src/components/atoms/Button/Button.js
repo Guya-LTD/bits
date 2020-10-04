@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withNaming } from '@bem-react/classname';
-import { classnames } from '@bem-react/classnames'
+import { classnames } from '@bem-react/classnames';
 
 import ButtonLink from './_Link/ButtonLink';
 import ButtonIcon from './__Icon/ButtonIcon';

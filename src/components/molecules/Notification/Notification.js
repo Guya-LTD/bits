@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withNaming } from '@bem-react/classname';
+import { classnames } from '@bem-react/classnames';
 
 import NotificationContent from './__Content/NotificationContent';
 
@@ -28,6 +29,12 @@ class Notification extends Component {
             title,
             message,
             close,
+            size,
+            border,
+            href,
+            type,
+            theme,
+            variant,
         } = this.props;
 
         /* Class name generator */
@@ -36,11 +43,30 @@ class Notification extends Component {
         /* Set base classname */
         let classname = cn(bsPrefix)
 
-        return (
-            <div className={classname()}>
-                <NotificationContent cn={classname} title={title} message={message} close={close} /> 
-            </div>
-        )
+        /* Theme name */
+        const themeName = theme ? 'theme-' + theme : null
+
+        /* Classnames */
+        const classnametext = classnames(
+            classname({'': size}),
+            classname({'': border + '-border'}),
+            classname({'': variant}),
+            classname({'': type}),
+            themeName
+        );
+
+        if(href != null)
+            return (
+                <a className={classnametext} href={href}>
+                    <NotificationContent cn={classname} title={title} message={message} close={close} /> 
+                </a>
+            )
+        else 
+            return (
+                <div className={classnametext}>
+                    <NotificationContent cn={classname} title={title} message={message} close={close} /> 
+                </div>
+            )
     }
 }
 

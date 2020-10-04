@@ -1,0 +1,37 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import Notification from '../../components/molecules/Notification';
+
+<Meta title="Molecules/Notification" component={Notification} />
+
+# Notification
+
+<Canvas>
+    <Story name='Default'>
+        <Notification 
+            title={<p>title</p>}
+            message={<p>message</p>}
+        />
+    </Story>
+</Canvas>
+
+<Canvas>
+    <Story name='Alert'>
+        <Notification 
+            type='alert'
+            message={<p>message</p>}
+        />
+    </Story>
+</Canvas>
+
+## Themes
+<Canvas>
+    <Story name='Theme-royal-blue'>
+        <Notification 
+            type='alert'
+            theme='royal-blue'
+            message={<p>message</p>}
+        />
+    </Story>
+</Canvas>

@@ -18,7 +18,7 @@ import React from 'react';
 
 const PanelFooter = ({cn, content}) => {
     /* Class names collection */
-    const classname = cn('body');
+    const classname = cn('footer');
 
     return (
         <div className={classname}>

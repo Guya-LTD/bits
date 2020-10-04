@@ -1,0 +1,26 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import Link from '../../components/atoms/Typography';
+
+<Meta title="Atoms/Typography" component={Typography} />
+
+
+# Typography
+
+Typography Documentation
+
+<ArgsTable of={Link} />
+
+## Default Usage
+
+<Canvas>
+    <Story name='Headers'>
+        <Typography size='h1'>Typography 1</Typography>
+        <Typography size='h2'>Typography 2</Typography>
+        <Typography size='h3'>Typography 3</Typography>
+        <Typography size='h4'>Typography 4</Typography>
+        <Typography size='h5'>Typography 5</Typography>
+        <Typography size='h6'>Typography 6</Typography>
+    </Story>
+</Canvas>

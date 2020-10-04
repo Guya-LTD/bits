@@ -2,6 +2,7 @@ import { ArgsTable } from '@storybook/addon-docs/blocks';
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 
 import PanelTemplate from '../../../components/templates/home/Panel';
+import Sidebar from '../../../components/molecules/Sidebar';
 
 <Meta title="Templates/Home/Panel" component={PanelTemplate} />
 
@@ -10,10 +11,23 @@ import PanelTemplate from '../../../components/templates/home/Panel';
 <Canvas>
     <Story name='Devault'>
         <PanelTemplate 
-            sidebar={ <div class='box' /> }
+            sidebar={ 
+                <Sidebar 
+                    menu={
+                        {
+                            primary: {
+                                logo: <div class='box' />,
+                                top: <div class='box' />,
+                                bottom: <div class='box' />
+                            },
+                            secondary: <div class='box' />
+                        }
+                    }
+                />
+             }
             header={ <div class='box' /> }
-            body={ <div class='box' /> }
-            footer={ <div class='box' /> }
-        />
+            footer={ <div class='box' /> } >
+            <div class='box' />
+        </PanelTemplate>
     </Story>
 </Canvas> 

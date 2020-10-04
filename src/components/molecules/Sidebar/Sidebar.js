@@ -37,6 +37,7 @@ class Sidebar extends Component {
 
         /* Classnames */
         const classnametext = classnames(
+            classname(),
             themeName
         );
 

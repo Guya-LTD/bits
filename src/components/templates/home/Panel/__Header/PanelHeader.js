@@ -18,7 +18,7 @@ import React from 'react';
 
 const PanelHeader = ({cn, content}) => {
     /* Class names collection */
-    const classname = cn('body');
+    const classname = cn('header');
 
     return (
         <div className={classname}>

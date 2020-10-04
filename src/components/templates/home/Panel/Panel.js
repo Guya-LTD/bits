@@ -29,7 +29,7 @@ class Panel extends Component {
             bsPrefix,
             sidebar,
             header,
-            body,
+            children,
             footer
         } = this.props;
 
@@ -46,7 +46,7 @@ class Panel extends Component {
                 </div>
                 <div className='col-xs-9 main main--has-sidebar container'>
                 {!!(header)? <PanelHeader cn={classname} content={header} /> : null}
-                {!!(body)? <PanelBody cn={classname} content={body} /> : null}
+                {!!(children)? <PanelBody cn={classname} content={children} /> : null}
                 {!!(footer)? <PanelFooter cn={classname} content={footer} /> : null}
                 </div>
             </div>
@@ -68,7 +68,6 @@ Panel.defaultProps = {
     bsPrefix: 'container',
     sidebar: null,
     header: null,
-    body: null,
     footer: null
 }
 
