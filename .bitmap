@@ -291,6 +291,54 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "guya-ltd.gcss/molecules/sidebar@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/molecules/Sidebar/Sidebar.js",
+                "test": false,
+                "name": "Sidebar.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Sidebar/__Menu/SidebarMenu.js",
+                "test": false,
+                "name": "SidebarMenu.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Sidebar/__Menu/__Primary/SidebarMenuPrimary.js",
+                "test": false,
+                "name": "SidebarMenuPrimary.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Sidebar/__Menu/__Primary/__Bottom/SidebarMenuPriamryBottom.js",
+                "test": false,
+                "name": "SidebarMenuPriamryBottom.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Sidebar/__Menu/__Primary/__Logo/SidebarMenuPriamryLogo.js",
+                "test": false,
+                "name": "SidebarMenuPriamryLogo.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Sidebar/__Menu/__Primary/__Top/SidebarMenuPriamryTop.js",
+                "test": false,
+                "name": "SidebarMenuPriamryTop.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Sidebar/__Menu/__Secondary/SidebarMenuSecondary.js",
+                "test": false,
+                "name": "SidebarMenuSecondary.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Sidebar/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/molecules/Sidebar/index.js",
+        "trackDir": "src/components/molecules/Sidebar",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "guya-ltd.gcss/organisms/card@0.0.2": {
         "files": [
             {
@@ -367,7 +415,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/templates/home/panel@0.0.2": {
+    "guya-ltd.gcss/templates/home/panel@0.0.3": {
         "files": [
             {
                 "relativePath": "src/components/templates/home/Panel/Panel.js",

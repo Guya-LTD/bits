@@ -41,10 +41,10 @@ class Panel extends Component {
 
         return (
             <div className='row'>
-                <div className='col-xs-3'>
+                <div className='col-xs-2'>
                     {sidebar}
                 </div>
-                <div className='col-xs-9 main main--has-sidebar container'>
+                <div className='col-xs-10 main main--has-sidebar container container--menu'>
                 {!!(header)? <PanelHeader cn={classname} content={header} /> : null}
                 {!!(children)? <PanelBody cn={classname} content={children} /> : null}
                 {!!(footer)? <PanelFooter cn={classname} content={footer} /> : null}
