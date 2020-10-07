@@ -1,0 +1,19 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import Tip from '../../components/atoms/Tip';
+
+<Meta title="Atoms/Tip" component={Tip} />
+
+# Tip
+
+<ArgsTable of={Tip} />
+
+<Canvas>
+    <Story name='Basic'>
+        <Tip>Tip</Tip>
+        <Tip variant='green'>Tip</Tip>
+        <Tip variant='yellow'>Tip</Tip>
+        <Tip variant='red'>Tip</Tip>
+    </Story>
+</Canvas>
