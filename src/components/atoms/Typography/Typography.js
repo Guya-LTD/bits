@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withNaming } from '@bem-react/classname';
-import { classnames } from '@bem-react/classnames'
+import { classnames } from '@bem-react/classnames';
 
 import TypographyH1 from './_H1/TypographyH1';
 import TypographyH2 from './_H2/TypographyH2';
@@ -47,19 +47,19 @@ class Typography extends Component {
         );
 
         if(size == 'h1')
-            return <TypographyH1 cn={classname} children={children} />
+            return <TypographyH1 cn={classname} theme={themeName} children={children} />
         else if(size == 'h2')
-            return <TypographyH2 cn={classname} children={children} />
+            return <TypographyH2 cn={classname} theme={themeName} children={children} />
         else if(size == 'h3')
-            return <TypographyH3 cn={classname} children={children} />
+            return <TypographyH3 cn={classname} theme={themeName} children={children} />
         else if(size == 'h4')
-            return <TypographyH4 cn={classname} children={children} />
+            return <TypographyH4 cn={classname} theme={themeName} children={children} />
         else if(size == 'h5')
-            return <TypographyH5 cn={classname} children={children} />
+            return <TypographyH5 cn={classname} theme={themeName} children={children} />
         else if(size == 'h6')
-            return <TypographyH6 cn={classname} children={children} />
+            return <TypographyH6 cn={classname} theme={themeName} children={children} />
         else
-            return <span className={classname()}>{children}</span>
+            return <span className={classnametext}>{children}</span>
     }
 }
 

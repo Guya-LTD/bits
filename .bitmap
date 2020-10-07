@@ -115,7 +115,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/atoms/typography@0.0.3": {
+    "guya-ltd.gcss/atoms/typography@0.0.4": {
         "files": [
             {
                 "relativePath": "src/components/atoms/Typography/Typography.js",

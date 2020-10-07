@@ -16,11 +16,11 @@ import React from 'react';
  * @example 
  */
 
-const TypographyH1 = ({cn, children}) => {
+const TypographyH1 = ({cn, children, theme}) => {
     /* Class names collection */
     const classname = cn({'': 'h3'})
 
-    return <h1 className={classname}>{children}</h1>
+    return <h1 className={classname + ' ' + theme}>{children}</h1>
 }
 
 /**
