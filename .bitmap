@@ -79,7 +79,43 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/atoms/typography@0.0.1": {
+    "guya-ltd.gcss/atoms/search@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/atoms/Search/Search.js",
+                "test": false,
+                "name": "Search.js"
+            },
+            {
+                "relativePath": "src/components/atoms/Search/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/atoms/Search/index.js",
+        "trackDir": "src/components/atoms/Search",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "guya-ltd.gcss/atoms/tip@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/atoms/Tip/Tip.js",
+                "test": false,
+                "name": "Tip.js"
+            },
+            {
+                "relativePath": "src/components/atoms/Tip/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/atoms/Tip/index.js",
+        "trackDir": "src/components/atoms/Tip",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "guya-ltd.gcss/atoms/typography@0.0.3": {
         "files": [
             {
                 "relativePath": "src/components/atoms/Typography/Typography.js",
@@ -158,7 +194,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/molecules/field@0.0.7": {
+    "guya-ltd.gcss/molecules/field@0.0.8": {
         "files": [
             {
                 "relativePath": "src/components/molecules/Field/Field.js",
@@ -212,7 +248,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/molecules/navbar@0.0.2": {
+    "guya-ltd.gcss/molecules/navbar@0.0.3": {
         "files": [
             {
                 "relativePath": "src/components/molecules/Navbar/Navbar.js",

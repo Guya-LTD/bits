@@ -29,14 +29,22 @@ import TypographyH6 from './_H6/TypographyH6';
 class Typography extends Component {
     render() {
         /* Props */
-        const {bsPrefix, children, size} = this.props;
+        const {bsPrefix, children, size, theme} = this.props;
 
         /* Class name generator */
         const cn = withNaming({ e: '__', m: '', v: '--' })
 
         /* Set base classname */
-        let classname = cn(bsPrefix)
-        console.log(size)
+        let classname = cn(bsPrefix);
+
+        /* Theme name */
+        const themeName = theme ? 'theme-' + theme : null
+        
+        /* Classnames */
+        const classnametext = classnames(
+            classname(),
+            themeName
+        );
 
         if(size == 'h1')
             return <TypographyH1 cn={classname} children={children} />

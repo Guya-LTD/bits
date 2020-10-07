@@ -18,7 +18,7 @@ import React from 'react';
 
 const TypographyH2 = ({cn, children}) => {
     /* Class names collection */
-    const classname = cn({'': 'h1'})
+    const classname = cn({'': 'h2'})
 
     return <h2 className={classname}>{children}</h2>
 }
