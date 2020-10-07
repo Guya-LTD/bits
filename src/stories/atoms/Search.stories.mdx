@@ -1,0 +1,23 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { IconContext } from "react-icons";
+import { IoIosSearch } from "react-icons/io";
+
+import Search from '../../components/atoms/Search';
+
+<Meta title="Atoms/Search" component={Search} />
+
+
+# Search
+
+<Canvas>
+    <Story name='Default'>
+        <Search
+            icon={
+                <IconContext.Provider value={{ className: "icon" }}>
+                    <IoIosSearch />
+                </IconContext.Provider>
+            }
+        />
+    </Story>
+</Canvas>
