@@ -36,18 +36,19 @@ class Typography extends Component {
 
         /* Set base classname */
         let classname = cn(bsPrefix)
+        console.log(size)
 
-        if(size === 'h1')
+        if(size == 'h1')
             return <TypographyH1 cn={classname} children={children} />
-        else if(size === 'h2')
+        else if(size == 'h2')
             return <TypographyH2 cn={classname} children={children} />
-        else if(size === 'h3')
+        else if(size == 'h3')
             return <TypographyH3 cn={classname} children={children} />
-        else if(size === 'h4')
+        else if(size == 'h4')
             return <TypographyH4 cn={classname} children={children} />
-        else if(size === 'h5')
+        else if(size == 'h5')
             return <TypographyH5 cn={classname} children={children} />
-        else if(size === 'h6')
+        else if(size == 'h6')
             return <TypographyH6 cn={classname} children={children} />
         else
             return <span className={classname()}>{children}</span>
@@ -73,6 +74,10 @@ Typography.propTypes = {
      * @default 'Typography Text'
      */
     children: PropTypes.string,
+}
+
+Typography.defaultProps = {
+    bsPrefix: 'typography'
 }
 
 /**
