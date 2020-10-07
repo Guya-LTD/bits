@@ -1,0 +1,26 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import ShopLoginTemplate from '../../components/templates/ShopLogin';
+import Typography from '../../components/atoms/Typography';
+
+<Meta title="pages/ShopLogin" component={ShopLoginTemplate} />
+
+# HttpError Page
+
+<ArgsTable of={HttpError} />
+
+<Canvas>
+    <Story name='Basic'>
+        <ShopLoginTemplate 
+            left={ 
+                <div>
+                    <Typography size='h2' theme='royal-blue'>
+                        Create an account to:
+                    </Typography>
+                </div>
+            }
+            right={<div class='box' />}
+         />
+    </Story>
+</Canvas>

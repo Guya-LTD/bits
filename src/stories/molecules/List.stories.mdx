@@ -8,32 +8,14 @@ import List from '../../components/molecules/List';
 
 # List
 
-export const menus = [
-    <a href='#'>abc</a>,
-    {
-
-    }
-]
-
-<ListItem>
-    <List type='collapse' faciliter={
-        {
-            icon: ,
-            text: ,
-            open: ,
-            close: 
-        }
-    }/>
-    <ListItemCollapse>
-        <List>
-        
-        </List>
-    </ListItemCollapse>
-
-</ListItem>
-
 <Canvas>
     <Story name='Default'>
-        <Field description='Some small text'/>
+        <List lists={
+            [
+                { type: 'single', list: 'LOne' },
+                { type: 'faciliter', faciliter: { text: 'Collapse', icon: 'I', open: 'O', close: 'C'} },
+                { type: 'collapse', collapse: ['C', 'C2'] }
+            ]
+        }/>
     </Story>
 </Canvas>

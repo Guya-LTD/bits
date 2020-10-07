@@ -1,0 +1,19 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import ShopLogin from '../../components/templates/ShopLogin';
+
+<Meta title="Templates/ShopLogin" component={ShopLogin} />
+
+# HttpError Page
+
+<ArgsTable of={ShopLogin} />
+
+<Canvas>
+    <Story name='Basic'>
+        <ShopLogin 
+            left={<div class='box' />}
+            right={<div class='box' />}
+         />
+    </Story>
+</Canvas>
