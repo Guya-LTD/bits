@@ -1,0 +1,39 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import Nav from '../../components/molecules/Nav';
+
+<Meta title="Molecules/Nav" component={Nav} />
+
+
+# Nav
+
+<Canvas>
+    <Story name='Default'>
+        <Nav 
+            navs={
+                [
+                    {type: 'single', nav: 'One'},
+                    {
+                        type: 'collapse',
+                        faciliter: {
+                            text: 'Collapse',
+                            open: 'O',
+                            Close: 'C'
+                        },
+                        collapse: {
+                            left: [
+                                'l1',
+                                'l2'
+                            ],
+                            right: [
+                                'r1',
+                                'r2'
+                            ]
+                        }
+                    }
+                ]
+            }
+        />
+    </Story>
+</Canvas>
