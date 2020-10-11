@@ -266,6 +266,24 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "guya-ltd.gcss/molecules/nav@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/molecules/Nav/Nav.js",
+                "test": false,
+                "name": "Nav.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Nav/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/molecules/Nav/index.js",
+        "trackDir": "src/components/molecules/Nav",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "guya-ltd.gcss/molecules/navbar@0.0.4": {
         "files": [
             {
