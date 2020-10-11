@@ -1,0 +1,81 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { IconContext } from "react-icons";
+import { IoIosMenu, IoMdClose, IoIosSearch } from "react-icons/io";
+
+import Navbar from '../../components/molecules/Navbar';
+import Logo from '../../components/molecules/Logo';
+import Search from '../../components/atoms/Search';
+import Button from '../../components/atoms/Button';
+
+<Meta title="Molecules/Navbar" component={Navbar} />
+
+# Navbar
+
+<Canvas>
+    <Story name='Basic'>
+        <Navbar 
+            open='o'
+            close='c'
+            brand={
+                {
+                    small: 's',
+                    large: 'l'
+                }
+            }
+            search={
+                {
+                    sticky: 'Stick'
+                }
+            }
+            collapse={ 
+                {
+                    search: 'Cs',
+                    left: 'Leftcoll',
+                    right: 'Rightcolla'
+                }
+            }
+            nav='Nav'
+        />
+    </Story>
+</Canvas>
+
+<Canvas>
+    <Story name='Shop Navbar'>
+        <Navbar 
+            theme='cornflower-blue'
+            open={<IconContext.Provider value={{ className: "icon icon--lg" }}>
+                    <IoIosMenu />
+                </IconContext.Provider>}
+            close={<IconContext.Provider value={{ className: "icon" }}>
+                    <IoMdClose />
+                </IconContext.Provider>}
+            brand={
+                {
+                    small: <Logo src='/images/guya-shop-logo.png' size='sm'/>,
+                    large: <Logo src='/images/guya-shop-logo.png' size='sm'/>
+                }
+            }
+            search={
+                {
+                    sticky: <Search
+                                theme='cornflower-blue'
+                                icon={
+                                    <IconContext.Provider value={{ className: "icon" }}>
+                                        <IoIosSearch />
+                                    </IconContext.Provider>
+                                }
+                            />
+                }
+            }
+            collapse={ 
+                {
+                    search: 'Cs',
+                    left: <Button variant='primary' theme='cornflower-blue' size='sm'>Sell On Guya</Button>,
+                    right: 'Rightcolla'
+                }
+            }
+            nav='Nav'
+        />
+    </Story>
+</Canvas>
