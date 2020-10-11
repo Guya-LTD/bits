@@ -231,6 +231,24 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "guya-ltd.gcss/molecules/list@0.0.2": {
+        "files": [
+            {
+                "relativePath": "src/components/molecules/List/List.js",
+                "test": false,
+                "name": "List.js"
+            },
+            {
+                "relativePath": "src/components/molecules/List/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/molecules/List/index.js",
+        "trackDir": "src/components/molecules/List",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "guya-ltd.gcss/molecules/logo@0.0.1": {
         "files": [
             {
@@ -248,7 +266,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/molecules/navbar@0.0.3": {
+    "guya-ltd.gcss/molecules/navbar@0.0.4": {
         "files": [
             {
                 "relativePath": "src/components/molecules/Navbar/Navbar.js",
