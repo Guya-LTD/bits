@@ -466,6 +466,24 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "guya-ltd.gcss/organisms/footer@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/organisms/Footer/Footer.js",
+                "test": false,
+                "name": "Footer.js"
+            },
+            {
+                "relativePath": "src/components/organisms/Footer/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/organisms/Footer/index.js",
+        "trackDir": "src/components/organisms/Footer",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "guya-ltd.gcss/organisms/formcontrol@0.0.1": {
         "files": [
             {
@@ -598,7 +616,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/templates/xpresshome@0.0.1": {
+    "guya-ltd.gcss/templates/xpresshome@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/templates/XpressHome/XpressHome.js",
