@@ -231,6 +231,24 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "guya-ltd.gcss/molecules/hero@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/molecules/Hero/Hero.js",
+                "test": false,
+                "name": "Hero.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Hero/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/molecules/Hero/index.js",
+        "trackDir": "src/components/molecules/Hero",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "guya-ltd.gcss/molecules/list@0.0.2": {
         "files": [
             {
@@ -577,6 +595,24 @@
             }
         ],
         "mainFile": "src/components/templates/landing/Login/index.js",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "guya-ltd.gcss/templates/xpresshome@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/templates/XpressHome/XpressHome.js",
+                "test": false,
+                "name": "XpressHome.js"
+            },
+            {
+                "relativePath": "src/components/templates/XpressHome/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/templates/XpressHome/index.js",
+        "trackDir": "src/components/templates/XpressHome",
         "origin": "AUTHORED",
         "exported": true
     },
