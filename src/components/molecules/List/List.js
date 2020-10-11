@@ -61,7 +61,7 @@ class List extends Component {
         /* Lists */
         let listItems = lists.map((list) => {
             if(list['type'] == 'single')
-                return <li>{list['list']}</li>
+                return <li className='list__item'>{list['list']}</li>
             else if(list['type'] == 'faciliter') {
                return( 
                     <li className='list__item list__collapse' ref={this.myRef} onClick={this.focusList}>
