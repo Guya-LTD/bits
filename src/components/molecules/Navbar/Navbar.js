@@ -22,21 +22,78 @@ import NavbarMenu from './__Menu/NavbarMenu';
  */
 
 class Navbar extends Component {
+    constructor() {
+        super();
+        this.myRef = React.createRef();
+        this.closeNavbar = this.closeNavbar.bind(this);
+        this.openNavbar = this.openNavbar.bind(this);
+    }
+
+    openNavbar() {
+        var navbar = document.getElementById('navbar')
+        navbar.classList.add('navbar--show')
+    }
+
+    closeNavbar() {
+        var navbar = document.getElementById('navbar')
+        navbar.classList.remove('navbar--show')
+        //navbarBrand.classList.remove('navbar__brand--remove')
+    }
+
     render () {
         /* Props */
-        const {bsPrefix, brand, menus} = this.props;
+        const {bsPrefix, brand, search, collapse, open, close, theme, nav} = this.props;
 
         /* Class name generator */
-        const cn = withNaming({ e: '__', m: '', v: '--' })
+        const cn = withNaming({ e: '__', m: '', v: '--' });
+
+        /* Theme name */
+        const themeName = theme ? 'theme-' + theme : null;
 
         /* Set base classname */
         let classname = cn(bsPrefix)
            // menus = { firstRow: {collapse, theme, size, brand: {open, small, large, search} } }
         return (
-            <nav class={classname()} id='navbar'>
-                <button class='navbar__close' onclick='closeNavbar(this)'>X</button>
-                {!!(brand)? <NavbarBrand cn={classname} content={brand} /> : null}
-                {!!(menus)? <NavbarMenu cn={classname} content={menus} /> : null}
+            <nav className={classname()} id='navbar'>
+                <button className='navbar__close' ref={this.myRef} onClick={this.closeNavbar}>{close}</button>
+                <div className={'row navbar__row navbar__row--lg ' + themeName}>
+                    <div class='col-xs-1' style={{paddingRight: 0}}></div>
+                    <div class='col-xs-10 col-sm-2 col-lg-1 navbar__brand'>
+                        <div className='row'>
+                            <div class='col-xs-1 navbar__open' onClick={this.openNavbar}>{open}</div>
+                            <div class='col-xs'>
+                                <div class='navbar__brand__small'>{brand.small}</div>
+                                <div class='navbar__brand__large'>{brand.large}</div>
+                            </div>
+                        </div>
+                        <div class='row navbar__brand__search'>
+                            {search.sticky}
+                        </div>
+                    </div> {/* End of barnd */}
+                    <div class='col-xs-12 col-sm-8 col-lg-8 navbar__collapse'>
+                        <div className='row'>
+                            <div className='col-xs-12 col-sm'>
+                                {collapse.left}
+                            </div>
+                            <div class='col-xs'>
+                                <div class='row end-xs'>
+                                    <div class='navbar__collapse__search'>
+                                        {collapse.search}
+                                    </div>
+                                    <div>
+                                        {collapse.right}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> {/* Collapse */}
+                </div> {/* End of top bar */}
+                <div className='row navbar__row'>
+                    <div class='col-xs-1'></div>
+                    <div className='col-xs-11 navbar__collapse navbar__collapse--sm'>
+                        {nav}
+                    </div>
+                </div>
             </nav>
         )
     }
