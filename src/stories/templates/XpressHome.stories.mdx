@@ -1,0 +1,35 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import XpressHome from '../../components/templates/XpressHome';
+import Hero from '../../components/molecules/Hero';
+
+<Meta title="Templates/XpressHome" component={XpressHome} />
+
+# Xpress
+
+<ArgsTable of={ShopLogin} />
+
+<Canvas>
+    <Story name='Basic'>
+        <XpressHome 
+            header={<div class='box' />}
+            hero={<Hero
+                    left={<div class='box' />}
+                    right={<div class='box' />}
+                />}
+            track={
+                [
+                    <div>
+                        <div class='box' />
+                        <div class='box' />
+                    </div>,
+                    <div class='box' />,
+                    <div class='box' />,
+                    <div class='box' />,
+                    <div class='box' />
+                ]
+            }
+         />
+    </Story>
+</Canvas>
