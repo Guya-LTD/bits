@@ -1,0 +1,82 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { IconContext } from "react-icons";
+import { IoIosMenu, IoMdClose, IoIosSearch } from "react-icons/io";
+
+import XpressHome from '../../components/templates/XpressHome';
+import Navbar from '../../components/molecules/Navbar';
+import Hero from '../../components/molecules/Hero';
+import Footer from '../../components/organisms/Footer';
+import Logo from '../../components/molecules/Logo';
+
+<Meta title="pages/XpressHome" component={XpressHome} />
+
+# HttpError Page
+
+<ArgsTable of={HttpError} />
+
+<Canvas>
+    <Story name='Basic'>
+        <XpressHome 
+            header={
+                <Navbar
+                    open={<IconContext.Provider value={{ className: "icon icon--lg" }}>
+                            <IoIosMenu />
+                        </IconContext.Provider>}
+                    close={<IconContext.Provider value={{ className: "icon" }}>
+                            <IoMdClose />
+                        </IconContext.Provider>}
+                    brand={
+                        {
+                            small: <Logo src='/images/xpress-logo.png' size='sm'/>,
+                            large: <Logo src='/images/xpress-logo.png' size='sm'/>
+                        }
+                    }
+                    collapse={ 
+                        {
+                            search: null,
+                            left: null,
+                            right: 'Rightcolla'
+                        }
+                    }
+                    nav='Nav'
+                />
+            }
+            hero={<Hero
+                    left={
+                        <Blockquote
+                            theme='red'
+                            size='lg'
+                            variant='primary'
+                            variant='danger'
+                            header={<Typography size='h1'>Where every Dad gets his day</Typography>}
+                            body={"Snap up a bargain for Dad, or surprise him with the latest tech. \
+                                                Check out our selection of Dad-centric gifts to make his day, plus \
+                                                enjoy free shipping Australia-wide."}
+                        />
+                    }
+                    right={<img style={{width: "100%"}} src='/images/shutterstock-498020416.jpg' />}
+                />}
+            track={
+                [
+                    <div>
+                        <div class='box' />
+                        <div class='box' />
+                    </div>,
+                    <div class='box' />,
+                    <div class='box' />,
+                    <div class='box' />,
+                    <div class='box' />
+                ]
+            }
+            footer={
+                <Footer
+                    r1c2={<div class='box' />}
+                    r2c3={<div class='box' />}
+                    r2c4={<div class='box' />}
+                    r3={<div class='box' />}
+                />
+            }
+         />
+    </Story>
+</Canvas>
