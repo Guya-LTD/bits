@@ -22,7 +22,7 @@ import { classnames } from '@bem-react/classnames';
 class ActionBar extends Component {
     render() {
         /* Props */
-        const {bsPrefix, title} = this.props;
+        const {bsPrefix, title, } = this.props;
 
         return (
             <div className={}
