@@ -2,6 +2,7 @@ import { ArgsTable } from '@storybook/addon-docs/blocks';
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 
 import Blockquote from '../../components/molecules/Blockquote';
+import Typography from '../../components/atoms/Typography';
 
 <Meta title="Molecules/Blockquote" component={Blockquote} />
 
@@ -55,6 +56,22 @@ import Blockquote from '../../components/molecules/Blockquote';
             variant='danger'
             header={<p>Header</p>}
             body={<p>Body</p>}
+         />
+    </Story>
+</Canvas>
+
+
+<Canvas>
+    <Story name='Red-hero-blockquote'>
+        <Blockquote
+            theme='red'
+            size='lg'
+            variant='primary'
+            variant='danger'
+            header={<Typography size='h1'>Where every Dad gets his day</Typography>}
+            body={"Snap up a bargain for Dad, or surprise him with the latest tech. \
+                                Check out our selection of Dad-centric gifts to make his day, plus \
+                                enjoy free shipping Australia-wide."}
          />
     </Story>
 </Canvas>
