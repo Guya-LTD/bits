@@ -79,3 +79,30 @@ import Button from '../../components/atoms/Button';
         />
     </Story>
 </Canvas>
+
+<Canvas>
+    <Story name='Xpress Navbar'>
+         <Navbar
+            open={<IconContext.Provider value={{ className: "icon icon--lg" }}>
+                    <IoIosMenu />
+                </IconContext.Provider>}
+            close={<IconContext.Provider value={{ className: "icon" }}>
+                    <IoMdClose />
+                </IconContext.Provider>}
+            brand={
+                {
+                    small: <Logo src='/images/xpress-logo.png' size='sm'/>,
+                    large: <Logo src='/images/xpress-logo.png' size='sm'/>
+                }
+            }
+            collapse={ 
+                {
+                    search: null,
+                    left: null,
+                    right: 'Rightcolla'
+                }
+            }
+            nav='Nav'
+        />
+    </Story>
+</Canvas>
