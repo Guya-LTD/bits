@@ -122,8 +122,11 @@ Navbar.propTypes = {
 
 Navbar.defaultProps = {
     bsPrefix: 'navbar',
-    brand: null,
+    brand: { small: null, large: null},
     menus: null,
+    search: { sticky: null },
+    collapse: { left: null, right: null, search: null},
+    nav: null,
 }
 
 /**
