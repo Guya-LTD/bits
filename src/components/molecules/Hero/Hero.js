@@ -37,10 +37,10 @@ class Hero extends Component {
 
         return(
             <div className={classnametext + ' row'}>
-                <div className='col-xs hero__left'>
+                <div className='col-md hero__left'>
                     {left}
                 </div>
-                <div className='col-xs hero__right'>
+                <div className='col-md hero__right'>
                     {right}
                 </div>
             </div>
