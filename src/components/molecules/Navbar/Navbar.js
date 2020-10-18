@@ -61,7 +61,7 @@ class Navbar extends Component {
                     <div class='col-xs-10 col-sm-2 col-lg-1 navbar__brand'>
                         <div className='row'>
                             <div class='col-xs-1 navbar__open' onClick={this.openNavbar}>{open}</div>
-                            <div class='col-xs'>
+                            <div style={{marginLeft: "30px"}} class='col-xs'>
                                 <div class='navbar__brand__small'>{brand.small}</div>
                                 <div class='navbar__brand__large'>{brand.large}</div>
                             </div>
