@@ -21,14 +21,14 @@ import { withNaming } from '@bem-react/classname';
 class XpressHome extends Component {
     render() {
         /* Props */
-        const{bsPrefix, header, hero, track, footer} = this.props;
+        const{bsPrefix, header, hero, track, footer, pricing} = this.props;
         
         return(
             <div>
                 {header}
                 {hero}
                 <div className='row center-xs'>
-                    <div className='col-xs-8 container container--menu container--round container--primary theme-red'>
+                    <div className='col-md-8 container container--menu container--round container--primary theme-red'>
                         <div className='row container__body'>
                             {
                                 track.map((item) => {
@@ -41,6 +41,10 @@ class XpressHome extends Component {
                             }
                         </div>
                     </div>
+                </div>
+                <div className="">
+                    {/* Pricing Table */}
+                    {pricing}
                 </div>
                 {footer}
             </div>
