@@ -1,7 +1,14 @@
 import { ArgsTable } from '@storybook/addon-docs/blocks';
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 import { IconContext } from "react-icons";
-import { IoIosArrowDown, IoIosArrowUp, IoMdLocate } from "react-icons/io";
+import { 
+    IoIosArrowDown,
+    IoIosArrowUp, 
+    IoMdLocate,
+    IoIosPin,
+    IoMdCalculator,
+    IoIosHome
+    } from "react-icons/io";
 
 import Nav from '../../components/molecules/Nav';
 import Link from '../../components/atoms/Link';
@@ -61,20 +68,20 @@ import Link from '../../components/atoms/Link';
                         collapse: {
                             left: [
                                 <Link theme="red" variant="nav-red">
-                                    <span><IoMdLocate /></span>
-                                    Track an Item
+                                    <span><IoIosPin /></span>
+                                    Find a postcode
                                 </Link>,
                                 <Link theme="red" variant="nav-red">
                                     <span><IoMdLocate /></span>
                                     Track an Item
                                 </Link>,
                                 <Link theme="red" variant="nav-red">
-                                    <span><IoMdLocate /></span>
-                                    Track an Item
+                                    <span><IoMdCalculator /></span>
+                                    Calculate postage
                                 </Link>,
                                 <Link theme="red" variant="nav-red">
-                                    <span><IoMdLocate /></span>
-                                    Track an Item
+                                    <span><IoIosHome /></span>
+                                    Find locations &amps; hours
                                 </Link>
                             ],
                             right: null

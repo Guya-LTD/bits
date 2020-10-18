@@ -1,7 +1,17 @@
 import { ArgsTable } from '@storybook/addon-docs/blocks';
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 import { IconContext } from "react-icons";
-import { IoIosMenu, IoMdClose, IoIosSearch } from "react-icons/io";
+import {
+    IoIosMenu,
+    IoMdClose, 
+    IoIosSearch,
+    IoIosArrowDown,
+    IoIosArrowUp,
+    IoMdLocate,
+    IoIosPin,
+    IoMdCalculator,
+    IoIosHome
+    }from "react-icons/io";
 
 import XpressHome from '../../components/templates/XpressHome';
 import Navbar from '../../components/molecules/Navbar';
@@ -14,6 +24,8 @@ import Search from '../../components/atoms/Search';
 import Field from '../../components/molecules/Field';
 import Button from '../../components/atoms/Button';
 import PriceTable from '../../components/molecules/PriceTable';
+import Nav from '../../components/molecules/Nav';
+import Link from '../../components/atoms/Link';
 
 <Meta title="pages/XpressHome" component={XpressHome} />
 
@@ -40,12 +52,53 @@ import PriceTable from '../../components/molecules/PriceTable';
                     }
                     collapse={ 
                         {
-                            search: null,
-                            left: null,
-                            right: 'Rightcolla'
+                            search: 'search',
+                            left: 'left',
+                            right: 'right'
                         }
                     }
-                    nav='Nav'
+                    nav={
+                       <Nav
+                            type='single'
+                            navs={
+                                [
+                                    {
+                                        type: 'collapse',
+                                        faciliter: {
+                                            text: 'Tools',
+                                            open: <IconContext.Provider value={{ className: "icon" }}>
+                                                    <IoIosArrowDown />
+                                                </IconContext.Provider>,
+                                            close: <IconContext.Provider value={{ className: "icon" }}>
+                                                    <IoIosArrowUp />
+                                                </IconContext.Provider>,
+                                        },
+                                        collapse: {
+                                            left: [
+                                                <Link theme="red" variant="nav-red">
+                                                    <span><IoIosPin /></span>
+                                                    Find a postcode
+                                                </Link>,
+                                                <Link theme="red" variant="nav-red">
+                                                    <span><IoMdLocate /></span>
+                                                    Track an Item
+                                                </Link>,
+                                                <Link theme="red" variant="nav-red">
+                                                    <span><IoMdCalculator /></span>
+                                                    Calculate postage
+                                                </Link>,
+                                                <Link theme="red" variant="nav-red">
+                                                    <span><IoIosHome /></span>
+                                                    Find locations
+                                                </Link>
+                                            ],
+                                            right: null
+                                        }
+                                    }
+                                ]
+                            }
+                        />
+                    }
                 />
             }
             hero={<Hero
