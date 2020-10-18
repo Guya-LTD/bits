@@ -13,6 +13,7 @@ import Typography from '../../components/atoms/Typography';
 import Search from '../../components/atoms/Search';
 import Field from '../../components/molecules/Field';
 import Button from '../../components/atoms/Button';
+import PriceTable from '../../components/molecules/PriceTable';
 
 <Meta title="pages/XpressHome" component={XpressHome} />
 
@@ -50,8 +51,8 @@ import Button from '../../components/atoms/Button';
             hero={<Hero
                     left={
                        <div className='row'>
-                           <div class='col-xs-2' />
-                           <div class='col-xs-8'>
+                           <div class='col-md-2' />
+                           <div class='col-md-8'>
                                 <Blockquote
                                     theme='red'
                                     size='lg'
@@ -89,6 +90,28 @@ import Button from '../../components/atoms/Button';
                         <span class='typography typography--sm typography--primary theme-red'>Find locations & hours</span>
                     </a>
                 ]
+            }
+            pricing={
+                <PriceTable 
+                    title="Price List"
+                    lists={[
+                        {
+                            name: "Price One",
+                            sign: "Birr",
+                            currency: "20",
+                            cent: "99",
+                            per: "/MON",
+                            href: "#",
+                            text: "Sign UP",
+                            features: [
+                                {
+                                    value: "20GB",
+                                    name: "Bandwidth"
+                                }
+                            ]
+                        }
+                    ]}
+                />
             }
             footer={
                 <Footer
