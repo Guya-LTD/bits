@@ -1,0 +1,33 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import PriceTable from '../../components/molecules/PriceTable';
+
+<Meta title="Molecules/PriceTable" component={PriceTable} />
+
+# PriceTable
+
+<Canvas>
+    <Story name='Default'>
+        <PriceTable 
+            title="Price List"
+            lists={[
+                {
+                    name: "Price One",
+                    sign: "Birr",
+                    currency: "20",
+                    cent: "99",
+                    per: "/MON",
+                    href: "#",
+                    text: "Sign UP",
+                    features: [
+                        {
+                            value: "20GB",
+                            name: "Bandwidth"
+                        }
+                    ]
+                }
+            ]}
+        />
+    </Story>
+</Canvas>
