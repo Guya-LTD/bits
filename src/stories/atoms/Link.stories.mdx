@@ -1,5 +1,6 @@
 import { ArgsTable } from '@storybook/addon-docs/blocks';
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { IoIosApps } from "react-icons/io";
 
 import Link from '../../components/atoms/Link';
 
@@ -30,6 +31,17 @@ Links Documentation
     </Story>
 </Canvas>
 
+## With Icon
+
+<Canvas>
+    <Story name="With Icon">
+        <Link>
+            <span><IoIosApps /></span>
+            Apps
+        </Link>
+    </Story>
+</Canvas>
+
 ## Themes
 
 ### Royal Blue Theme
@@ -55,3 +67,4 @@ Links Documentation
         <Link theme='royal-cornflower-blue'>Default</Link>
     </Story>
 </Canvas> 
+

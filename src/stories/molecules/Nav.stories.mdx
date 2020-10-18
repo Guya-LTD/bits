@@ -1,9 +1,10 @@
 import { ArgsTable } from '@storybook/addon-docs/blocks';
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 import { IconContext } from "react-icons";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp, IoMdLocate } from "react-icons/io";
 
 import Nav from '../../components/molecules/Nav';
+import Link from '../../components/atoms/Link';
 
 <Meta title="Molecules/Nav" component={Nav} />
 
@@ -43,6 +44,7 @@ import Nav from '../../components/molecules/Nav';
 <Canvas>
     <Story name="Xpress Tools">
         <Nav
+            type='single'
             navs={
                 [
                     {
@@ -58,7 +60,22 @@ import Nav from '../../components/molecules/Nav';
                         },
                         collapse: {
                             left: [
-                                'ls'
+                                <Link theme="red" variant="nav-red">
+                                    <span><IoMdLocate /></span>
+                                    Track an Item
+                                </Link>,
+                                <Link theme="red" variant="nav-red">
+                                    <span><IoMdLocate /></span>
+                                    Track an Item
+                                </Link>,
+                                <Link theme="red" variant="nav-red">
+                                    <span><IoMdLocate /></span>
+                                    Track an Item
+                                </Link>,
+                                <Link theme="red" variant="nav-red">
+                                    <span><IoMdLocate /></span>
+                                    Track an Item
+                                </Link>
                             ],
                             right: null
                         }
