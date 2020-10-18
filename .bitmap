@@ -231,7 +231,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/molecules/hero@0.0.1": {
+    "guya-ltd.gcss/molecules/hero@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/molecules/Hero/Hero.js",
@@ -284,7 +284,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/molecules/nav@0.0.1": {
+    "guya-ltd.gcss/molecules/nav@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/molecules/Nav/Nav.js",
@@ -302,7 +302,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/molecules/navbar@0.0.5": {
+    "guya-ltd.gcss/molecules/navbar@0.0.6": {
         "files": [
             {
                 "relativePath": "src/components/molecules/Navbar/Navbar.js",
@@ -381,7 +381,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/molecules/pricetable@0.0.1": {
+    "guya-ltd.gcss/molecules/pricetable@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/molecules/PriceTable/PriceTable.js",
@@ -634,7 +634,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/templates/xpresshome@0.0.2": {
+    "guya-ltd.gcss/templates/xpresshome@0.0.3": {
         "files": [
             {
                 "relativePath": "src/components/templates/XpressHome/XpressHome.js",

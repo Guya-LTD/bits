@@ -62,13 +62,17 @@ class Nav extends Component {
                                 })
                             }
                         </span>
-                        <span className='nav__collapse__right'>
-                            {
-                                nav['collapse']['right'].map((collapse) => {
-                                    return <li className='nav__item'>{collapse}</li>
-                                })
-                            }
-                        </span>
+                        {
+                            nav['collapse']['right']
+                            &&
+                            <span className='nav__collapse__right'>
+                                {
+                                    nav['collapse']['right'].map((collapse) => {
+                                        return <li className='nav__item'>{collapse}</li>
+                                    })
+                                }
+                            </span>
+                        }
                     </ul>
                 </li>
                 )
