@@ -33,7 +33,7 @@ class Nav extends Component {
     }
 
     render() {
-        const{navs}=this.props;
+        const{navs, type}=this.props;
 
         /* Nav list collapse */
         let navCollapseIems = (collapses) => {
@@ -41,6 +41,8 @@ class Nav extends Component {
                 return <li className='nav__item'>{collapse}</li>
             })
         }
+
+        const navType = type ? 'nav__collapse--' + type : null
 
         /* Lists */
         let navItems = navs.map((nav) => {
@@ -54,7 +56,7 @@ class Nav extends Component {
                         <span class='nav__faciliter__icon nav__faciliter__icon--open'>{nav['faciliter']['open']}</span>
                         <span class='nav__faciliter__icon nav__faciliter__icon--close'>{nav['faciliter']['close']}</span>
                     </span>
-                    <ul class='nav__collapse'>
+                    <ul class={'nav__collapse ' + navType}>
                         <span className='nav__collapse__left'>
                             {
                                 nav['collapse']['left'].map((collapse) => {
