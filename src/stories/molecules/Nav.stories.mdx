@@ -1,5 +1,7 @@
 import { ArgsTable } from '@storybook/addon-docs/blocks';
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { IconContext } from "react-icons";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 import Nav from '../../components/molecules/Nav';
 
@@ -30,6 +32,35 @@ import Nav from '../../components/molecules/Nav';
                                 'r1',
                                 'r2'
                             ]
+                        }
+                    }
+                ]
+            }
+        />
+    </Story>
+</Canvas>
+
+<Canvas>
+    <Story name="Xpress Tools">
+        <Nav
+            navs={
+                [
+                    {
+                        type: 'collapse',
+                        faciliter: {
+                            text: 'Tools',
+                            open: <IconContext.Provider value={{ className: "icon" }}>
+                                    <IoIosArrowDown />
+                                </IconContext.Provider>,
+                            close: <IconContext.Provider value={{ className: "icon" }}>
+                                    <IoIosArrowUp />
+                                </IconContext.Provider>,
+                        },
+                        collapse: {
+                            left: [
+                                'ls'
+                            ],
+                            right: null
                         }
                     }
                 ]
