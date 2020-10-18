@@ -21,7 +21,7 @@ class PriceTable extends Component {
     render() {
         const{title, lists}=this.props;
         return(
-            <div id="generic_price_table">   
+            <div id="generic_price_table" style={{background: "#eee"}}>   
                 <section>
                     <div className="container" style={{background: 0}}>
                         <div className="row">
@@ -38,7 +38,7 @@ class PriceTable extends Component {
                             {
                                 lists.map((list) => {
                                     return(
-                                    <div className="col-md-4">
+                                    <div className="col-xs-12 col-md-4">
                                         {/* PRICE CONTENT START */}
                                         <div className="generic_content clearfix">
                                             {/* HEAD PRICE DETAIL START */}
