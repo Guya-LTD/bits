@@ -302,7 +302,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/molecules/navbar@0.0.4": {
+    "guya-ltd.gcss/molecules/navbar@0.0.5": {
         "files": [
             {
                 "relativePath": "src/components/molecules/Navbar/Navbar.js",
@@ -378,6 +378,24 @@
             }
         ],
         "mainFile": "src/components/molecules/Notification/index.js",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "guya-ltd.gcss/molecules/pricetable@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/molecules/PriceTable/PriceTable.js",
+                "test": false,
+                "name": "PriceTable.js"
+            },
+            {
+                "relativePath": "src/components/molecules/PriceTable/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/molecules/PriceTable/index.js",
+        "trackDir": "src/components/molecules/PriceTable",
         "origin": "AUTHORED",
         "exported": true
     },
