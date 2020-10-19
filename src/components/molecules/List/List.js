@@ -95,9 +95,9 @@ class List extends Component {
         
 
         return(
-            <div className={classnametext}>
+            <ul className={classnametext}>
                 {listItems}
-            </div>
+            </ul>
         )
     }
 }
