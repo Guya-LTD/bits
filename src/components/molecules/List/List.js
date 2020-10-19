@@ -71,7 +71,11 @@ class List extends Component {
                return( 
                     <li className='list__item list__collapse' ref={this.myRef} onClick={this.focusList}>
                         <span class='list__collapse__faciliter'>
-                            <span class='list__collapse__faciliter__icon'>{list['faciliter']['icon']}</span>
+                            {
+                                list['faciliter']['icon'] 
+                                &&
+                                <span class='list__collapse__faciliter__icon'>{list['faciliter']['icon']}</span>   
+                            }
                             <span class='list__collapse__faciliter__text'>{list['faciliter']['text']}</span>
                             <span class='list__collapse__faciliter__icon list__collapse__faciliter__icon--open'>{list['faciliter']['open']}</span>
                             <span class='list__collapse__faciliter__icon list__collapse__faciliter__icon--close'>{list['faciliter']['close']}</span>
