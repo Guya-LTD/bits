@@ -249,7 +249,25 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/molecules/list@0.0.2": {
+    "guya-ltd.gcss/molecules/infocard@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/molecules/InfoCard/InfoCard.js",
+                "test": false,
+                "name": "InfoCard.js"
+            },
+            {
+                "relativePath": "src/components/molecules/InfoCard/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/molecules/InfoCard/index.js",
+        "trackDir": "src/components/molecules/InfoCard",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "guya-ltd.gcss/molecules/list@0.0.3": {
         "files": [
             {
                 "relativePath": "src/components/molecules/List/List.js",

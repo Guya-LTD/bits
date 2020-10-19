@@ -1,0 +1,68 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import InfoCard from '../../components/molecules/InfoCard';
+import List from '../../components/molecules/List';
+import Typography from '../../components/atoms/Typography';
+
+<Meta title="Molecules/InfoCard" component={InfoCard} />
+
+
+# InfoCard
+
+<Canvas>
+    <Story name='Basic'>
+        <InfoCard 
+            title={
+                <h3>Erlduand CPA</h3>
+            }
+            description={
+                <p>Samll text allocation details</p>
+            }
+            pin={
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".03" d="M11.743 24c5.247 0 9.5-.672 9.5-1.5s-4.253-1.5-9.5-1.5-9.5.672-9.5 1.5 4.253 1.5 9.5 1.5z" fill="#000"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M12.054 0C7.221.002 3.456 3.932 3.297 9.081c-.216 6.76 5.723 8.558 8.083 12.973.492.825.856.825 1.348 0 2.36-4.415 8.3-6.212 8.083-12.973C20.652 3.932 16.887.001 12.054 0z" fill="#DC1928"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M9.019 8.692a.405.405 0 00-.404.398v3.512c0 .22.189.398.4.398h.555c.22 0 .4-.174.4-.391V10.74a.4.4 0 01.39-.39h1.248a.39.39 0 01.392.39v1.869c0 .216.182.391.402.391h2.581a.404.404 0 00.402-.398V9.09a.4.4 0 00-.404-.398H9.02zM14.7 5.203A.465.465 0 0014.32 5H9.68c-.149 0-.29.075-.38.203L8.078 7.428c-.188.267-.01.649.303.649h7.24c.313 0 .49-.382.304-.649l-1.225-2.225z" fill="#fff"></path></svg>
+            }
+            list={
+                <List variant="infocard" lists={
+                    [
+                        { 
+                            type: 'faciliter', 
+                            faciliter: { 
+                                text: <span>Closed now &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7:00am - 9:00pm</span>, 
+                                icon: null,
+                                open: <IoIosArrowDown />, 
+                                close: <IoIosArrowUp />
+                            }
+                        },
+                        { 
+                            type: 'collapse', 
+                            collapse: [
+                                <span className="row">
+                                    <span class="col-xs-6">Monday</span> <span class="col-xs-6">7:00am - 9:00pm</span>
+                                </span>,
+                                <span className="row">
+                                    <span class="col-xs-6">Tuesday</span> <span class="col-xs-6">7:00am - 9:00pm</span>
+                                </span>,
+                                <span className="row">
+                                    <span class="col-xs-6">Wednesday</span> <span class="col-xs-6">7:00am - 9:00pm</span>
+                                </span>,
+                                <span className="row">
+                                    <span class="col-xs-6">Thursday</span> <span class="col-xs-6">7:00am - 9:00pm</span>
+                                </span>,
+                                <span className="row">
+                                    <span class="col-xs-6">Friday</span> <span class="col-xs-6">7:00am - 9:00pm</span>
+                                </span>,
+                                <span className="row">
+                                    <span class="col-xs-6">Saturday</span> <span class="col-xs-6">7:00am - 9:00pm</span>
+                                </span>,
+                                <span className="row">
+                                    <span class="col-xs-6">Sunday</span> <span class="col-xs-6">7:00am - 9:00pm</span>
+                                </span>,
+                            ] 
+                        }
+                    ]
+                }/>
+            }
+        />
+    </Story>
+</Canvas>
