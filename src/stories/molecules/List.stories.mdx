@@ -1,5 +1,10 @@
 import { ArgsTable } from '@storybook/addon-docs/blocks';
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { IconContext } from "react-icons";
+import {
+    IoIosArrowDown,
+    IoIosArrowUp
+    }from "react-icons/io";
 
 import List from '../../components/molecules/List';
 
@@ -15,6 +20,50 @@ import List from '../../components/molecules/List';
                 { type: 'single', list: 'LOne' },
                 { type: 'faciliter', faciliter: { text: 'Collapse', icon: 'I', open: 'O', close: 'C'} },
                 { type: 'collapse', collapse: ['C', 'C2'] }
+            ]
+        }/>
+    </Story>
+</Canvas>
+
+<Canvas>
+    <Story name="Infocard">
+        <List variant="infocard" lists={
+            [
+                { 
+                    type: 'faciliter', 
+                    faciliter: { 
+                        text: <span>Closed now &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7:00am - 9:00pm</span>, 
+                        icon: null,
+                        open: <IoIosArrowDown />, 
+                        close: <IoIosArrowUp />
+                    }
+                },
+                { 
+                    type: 'collapse', 
+                    collapse: [
+                        <span className="row">
+                            <span class="col-xs-6">Monday</span> <span class="col-xs-6">7:00am - 9:00pm</span>
+                        </span>,
+                        <span className="row">
+                            <span class="col-xs-6">Tuesday</span> <span class="col-xs-6">7:00am - 9:00pm</span>
+                        </span>,
+                        <span className="row">
+                            <span class="col-xs-6">Wednesday</span> <span class="col-xs-6">7:00am - 9:00pm</span>
+                        </span>,
+                        <span className="row">
+                            <span class="col-xs-6">Thursday</span> <span class="col-xs-6">7:00am - 9:00pm</span>
+                        </span>,
+                        <span className="row">
+                            <span class="col-xs-6">Friday</span> <span class="col-xs-6">7:00am - 9:00pm</span>
+                        </span>,
+                        <span className="row">
+                            <span class="col-xs-6">Saturday</span> <span class="col-xs-6">7:00am - 9:00pm</span>
+                        </span>,
+                        <span className="row">
+                            <span class="col-xs-6">Sunday</span> <span class="col-xs-6">7:00am - 9:00pm</span>
+                        </span>,
+                    ] 
+                }
             ]
         }/>
     </Story>
