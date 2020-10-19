@@ -43,13 +43,18 @@ class List extends Component {
 
     render() {
         /* Props */
-        const{bsPrefix, lists} = this.props;
+        const{bsPrefix, lists, variant} = this.props;
 
         /* Class name generator */
         const cn = withNaming({ e: '__', m: '', v: '--' })
 
         /* Set base classname */
-        let classname = cn(bsPrefix)
+        let classname = cn(bsPrefix);
+
+        /* Classnames */
+        const classnametext = classnames(
+            classname({'': variant}),
+        );
 
         /* List Collapse */
         let listCollapse = (collapses) => {
@@ -90,7 +95,7 @@ class List extends Component {
         
 
         return(
-            <div className={classname()}>
+            <div className={classnametext}>
                 {listItems}
             </div>
         )
