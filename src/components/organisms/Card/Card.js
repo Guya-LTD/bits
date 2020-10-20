@@ -27,7 +27,7 @@ import CardFooter from './__Footer/CardFooter';
 class Card extends Component {
     render() {
         /* Props */
-        const {bsPrefix, image, header, children, footer, float, block} = this.props;
+        const {bsPrefix, image, header, children, footer, float, block, variant} = this.props;
 
         /* Class name generator */
         const cn = withNaming({ e: '__', m: '', v: '--' })
@@ -44,7 +44,8 @@ class Card extends Component {
         /* Classnames */
         const classnametext = classnames(
             classname({'': blockName}),
-            classname({'': floatName})
+            classname({'': floatName}),
+            classname({'': variant})
         );
 
         return (
