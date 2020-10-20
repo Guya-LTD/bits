@@ -1,0 +1,66 @@
+import { Meta, Story, Preview, Props, Canvas } from "@storybook/addon-docs/blocks";
+
+import Card from '../../components/organisms/Card';
+
+<Meta title="Organisms/Card" component={Card} />
+
+# Cards
+Cards contain content and actions about a single subject. `Cards` are surfaces that display content and actions on a single topic.
+
+They should be easy to scan for relevant and actionable information. Elements, like text and images, should be placed on them in a way that clearly indicates hierarchy.
+
+## Simple Card
+Although cards can support multiple actions, UI controls, and an overflow menu, use restraint and remember that cards are entry points to more complex and detailed information.
+
+<Preview>
+    <Story name='Basic'>
+        <Card header={<h1>Header</h1>}>
+            <p>Body</p>
+        </Card>
+    </Story>
+</Preview>
+
+
+## Media
+Example of a card using an image to reinforce the content.
+
+<Preview>
+    <Story name='Media'>
+        <Card
+            image={<div class="box" />} 
+            header={<h1>Header</h1>} >
+            <p>Body</p>
+        </Card>
+    </Story>
+</Preview>
+
+
+# Block level
+Create block level cards—those that span the full width of a parent—by adding `block` property.
+
+<Preview>
+    <Story name='Block'>
+        <Card block header={<h1>Header</h1>} >
+            <p>Body</p>
+        </Card>
+    </Story>
+</Preview>
+
+# Store View
+
+<Canvas>
+    <Story name='Store View'>
+        <Card float variant="store-view">
+            <div className="row">
+                <div className="col-xs-4">
+                    <div className="box" />
+                    <div className="box" />
+                    <div className="box" />
+                </div>
+                <div className="col-xs-8">
+                    <div className="box" />
+                </div>
+            </div>
+        </Card>
+    </Story>
+</Canvas>
