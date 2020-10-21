@@ -1,0 +1,33 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { IoIosApps } from "react-icons/io";
+
+import Avatar from '../../components/atoms/Avatar';
+
+<Meta title="Atoms/Avatar" component={Avatar} />
+
+
+# Avatar
+
+Avatar Documentation
+
+<ArgsTable of={Avatar} />
+
+## Basic Usage
+
+<Canvas>
+    <Story name='Basic'>
+        <Avatar />
+        <Avatar src="/images/no-photo-dark.svg" />
+    </Story>
+</Canvas>
+
+
+# Sizes
+
+<Canvas>
+    <Story name='Sizes'>
+        <Avatar size="sm" />
+        <Avatar size="sm" src="/images/no-photo-dark.svg" />
+    </Story>
+</Canvas>
