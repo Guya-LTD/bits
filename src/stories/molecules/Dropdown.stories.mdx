@@ -1,0 +1,60 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { IoIosLogOut } from "react-icons/io";
+
+import ProfileLink from '../../components/molecules/ProfileLink';
+import Dropdown from '../../components/molecules/Dropdown';
+import Avatar from '../../components/atoms/Avatar';
+import Link from '../../components/atoms/Link';
+
+<Meta title="Molecules/Dropdown" component={Dropdown} />
+
+
+# Input
+
+<Canvas>
+    <Story name='Admin panel hovedr dropdown'>
+        <div style={{marginTop: "200px", marginLeft: "200px"}}>
+            <Dropdown
+                type="is-hoverable is-up is-artl"
+                trigger={
+                    <Avatar />
+                }
+            >
+                <ProfileLink
+                    theme="royal-blue"
+                    photo={ <Avatar size="sm" /> }
+                    name="Demo"
+                    description="demo@example.com"
+                    cls="dropdown-item"
+                />
+                <Link theme="royal-blue" cls="dropdown-item">
+                    <span><IoIosLogOut /></span>
+                    Logout
+                </Link>
+            </Dropdown>
+        </div>
+    </Story>
+</Canvas>
+
+<Canvas>
+    <Story name="Example">
+        <div class="dropdown is-active">
+            <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu6">
+                <span>Right aligned</span>
+                <span class="icon is-small">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+                </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu6" role="menu">
+                <div class="dropdown-content">
+                <div class="dropdown-item">
+                    <p>Add the <code>is-right</code> modifier for a <strong>right-aligned</strong> dropdown.</p>
+                </div>
+                </div>
+            </div>
+            </div>
+    </Story>
+</Canvas>

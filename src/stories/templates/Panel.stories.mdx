@@ -1,0 +1,36 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import PanelTemplate, {
+    PanelContainer,
+    PanelContainerHeader,
+    PanelContainerBody,
+    PanelContainerFooter
+} from '../../components/templates/Panel';
+import Sidebar from '../../components/molecules/Sidebar';
+
+<Meta title="Templates/Panel" component={PanelTemplate} />
+
+# Login Templates
+
+<Canvas>
+    <Story name='With Container Body'>
+        <PanelTemplate 
+            sidebar={ 
+                <div class="box" />
+            }
+        >
+            <PanelContainer>
+                <PanelContainerHeader>
+                    <div className="box" />
+                </PanelContainerHeader>
+                <PanelContainerBody>
+                    <div className="box" />
+                </PanelContainerBody>
+                <PanelContainerFooter>
+                    <div className="box" />
+                </PanelContainerFooter>
+            </PanelContainer>
+        </PanelTemplate>
+    </Story>
+</Canvas> 

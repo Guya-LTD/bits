@@ -1,0 +1,19 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import XpressView from '../../components/templates/XpressView';
+
+<Meta title="Templates/XpressView" component={XpressView} />
+
+
+# XpressLocationList
+
+<Canvas>
+    <Story name="Basic">
+        <XpressView
+            header={<div class="box" />}
+            breadcrumb={<div class="box" />}
+            content={<div class="box" />}
+        />
+    </Story>
+</Canvas>
