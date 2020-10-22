@@ -341,44 +341,44 @@
     "guya-ltd.gcss/molecules/navbar@0.0.6": {
         "files": [
             {
+                "name": "Navbar.js",
                 "relativePath": "src/components/molecules/Navbar/Navbar.js",
-                "test": false,
-                "name": "Navbar.js"
+                "test": false
             },
             {
+                "name": "NavbarBrand.js",
                 "relativePath": "src/components/molecules/Navbar/__Brand/NavbarBrand.js",
-                "test": false,
-                "name": "NavbarBrand.js"
+                "test": false
             },
             {
+                "name": "NavbarBrandLarge.js",
                 "relativePath": "src/components/molecules/Navbar/__Brand/__Large/NavbarBrandLarge.js",
-                "test": false,
-                "name": "NavbarBrandLarge.js"
+                "test": false
             },
             {
+                "name": "NavbarBrandSmall.js",
                 "relativePath": "src/components/molecules/Navbar/__Brand/__Small/NavbarBrandSmall.js",
-                "test": false,
-                "name": "NavbarBrandSmall.js"
+                "test": false
             },
             {
+                "name": "NavbarMenu.js",
                 "relativePath": "src/components/molecules/Navbar/__Menu/NavbarMenu.js",
-                "test": false,
-                "name": "NavbarMenu.js"
+                "test": false
             },
             {
+                "name": "NavbarMenuLeft.js",
                 "relativePath": "src/components/molecules/Navbar/__Menu/__Left/NavbarMenuLeft.js",
-                "test": false,
-                "name": "NavbarMenuLeft.js"
+                "test": false
             },
             {
+                "name": "NavbarMenuRight.js",
                 "relativePath": "src/components/molecules/Navbar/__Menu/__Right/NavbarMenuRight.js",
-                "test": false,
-                "name": "NavbarMenuRight.js"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/molecules/Navbar/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             }
         ],
         "mainFile": "src/components/molecules/Navbar/index.js",
@@ -420,14 +420,14 @@
     "guya-ltd.gcss/molecules/pricetable@0.0.2": {
         "files": [
             {
+                "name": "PriceTable.js",
                 "relativePath": "src/components/molecules/PriceTable/PriceTable.js",
-                "test": false,
-                "name": "PriceTable.js"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/molecules/PriceTable/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             }
         ],
         "mainFile": "src/components/molecules/PriceTable/index.js",
