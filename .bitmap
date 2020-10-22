@@ -252,14 +252,14 @@
     "guya-ltd.gcss/molecules/hero@0.0.2": {
         "files": [
             {
+                "name": "Hero.js",
                 "relativePath": "src/components/molecules/Hero/Hero.js",
-                "test": false,
-                "name": "Hero.js"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/molecules/Hero/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             }
         ],
         "mainFile": "src/components/molecules/Hero/index.js",
@@ -323,14 +323,14 @@
     "guya-ltd.gcss/molecules/nav@0.0.3": {
         "files": [
             {
+                "name": "Nav.js",
                 "relativePath": "src/components/molecules/Nav/Nav.js",
-                "test": false,
-                "name": "Nav.js"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/molecules/Nav/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             }
         ],
         "mainFile": "src/components/molecules/Nav/index.js",
@@ -673,14 +673,14 @@
     "guya-ltd.gcss/templates/xpresshome@0.0.3": {
         "files": [
             {
+                "name": "XpressHome.js",
                 "relativePath": "src/components/templates/XpressHome/XpressHome.js",
-                "test": false,
-                "name": "XpressHome.js"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/templates/XpressHome/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             }
         ],
         "mainFile": "src/components/templates/XpressHome/index.js",
