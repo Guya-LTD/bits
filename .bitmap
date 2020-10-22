@@ -270,14 +270,14 @@
     "guya-ltd.gcss/molecules/infocard@0.0.1": {
         "files": [
             {
+                "name": "InfoCard.js",
                 "relativePath": "src/components/molecules/InfoCard/InfoCard.js",
-                "test": false,
-                "name": "InfoCard.js"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/molecules/InfoCard/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             }
         ],
         "mainFile": "src/components/molecules/InfoCard/index.js",
@@ -288,14 +288,14 @@
     "guya-ltd.gcss/molecules/list@0.0.3": {
         "files": [
             {
+                "name": "List.js",
                 "relativePath": "src/components/molecules/List/List.js",
-                "test": false,
-                "name": "List.js"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/molecules/List/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             }
         ],
         "mainFile": "src/components/molecules/List/index.js",
