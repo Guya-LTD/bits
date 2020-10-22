@@ -323,14 +323,14 @@
     "guya-ltd.gcss/molecules/nav@0.0.3": {
         "files": [
             {
+                "name": "Nav.js",
                 "relativePath": "src/components/molecules/Nav/Nav.js",
-                "test": false,
-                "name": "Nav.js"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/molecules/Nav/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             }
         ],
         "mainFile": "src/components/molecules/Nav/index.js",
