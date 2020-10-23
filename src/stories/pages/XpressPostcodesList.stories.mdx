@@ -1,0 +1,136 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { IconContext } from "react-icons";
+import {
+    IoIosMenu,
+    IoMdClose, 
+    IoIosSearch,
+    IoIosArrowDown,
+    IoIosArrowUp,
+    IoMdLocate,
+    IoIosPin,
+    IoMdCalculator,
+    IoIosHome
+    }from "react-icons/io";
+
+import XpressView from '../../components/templates/XpressView';
+import Navbar from '../../components/molecules/Navbar';
+import Hero from '../../components/molecules/Hero';
+import Footer from '../../components/organisms/Footer';
+import Logo from '../../components/molecules/Logo';
+import Blockquote from '../../components/molecules/Blockquote';
+import Typography from '../../components/atoms/Typography';
+import Search from '../../components/atoms/Search';
+import Field from '../../components/molecules/Field';
+import Button from '../../components/atoms/Button';
+import PriceTable from '../../components/molecules/PriceTable';
+import Nav from '../../components/molecules/Nav';
+import Link from '../../components/atoms/Link';
+import Breadcrumb from '../../components/molecules/Breadcrumb';
+
+<Meta title="pages/XpressPostcodesList" component={XpressView} />
+
+# HttpError Page
+
+<ArgsTable of={HttpError} />
+
+<Canvas>
+    <Story name='Basic'>
+        <XpressView 
+            header={
+                <Navbar
+                    open={<IconContext.Provider value={{ className: "icon icon--lg" }}>
+                            <IoIosMenu />
+                        </IconContext.Provider>}
+                    close={<IconContext.Provider value={{ className: "icon" }}>
+                            <IoMdClose />
+                        </IconContext.Provider>}
+                    brand={
+                        {
+                            small: <Logo src='/images/xpress-logo.png' size='sm'/>,
+                            large: <Logo src='/images/xpress-logo.png' size='sm'/>
+                        }
+                    }
+                    search={{
+                        sticky: null
+                    }}
+                    collapse={ 
+                        {
+                            search: null,
+                            left: null,
+                            right: null
+                        }
+                    }
+                    nav={
+                       <Nav
+                            type='single'
+                            navs={
+                                [
+                                    {
+                                        type: 'collapse',
+                                        faciliter: {
+                                            text: 'Tools',
+                                            open: <IconContext.Provider value={{ className: "icon icon--sm" }}>
+                                                    <IoIosArrowDown />
+                                                </IconContext.Provider>,
+                                            close: <IconContext.Provider value={{ className: "icon icon--sm" }}>
+                                                    <IoIosArrowUp />
+                                                </IconContext.Provider>,
+                                        },
+                                        collapse: {
+                                            left: [
+                                                <Link theme="red" variant="nav-red">
+                                                    <span><IoIosPin /></span>
+                                                    Find a postcode
+                                                </Link>,
+                                                <Link theme="red" variant="nav-red">
+                                                    <span><IoMdLocate /></span>
+                                                    Track an Item
+                                                </Link>,
+                                                <Link theme="red" variant="nav-red">
+                                                    <span><IoMdCalculator /></span>
+                                                    Calculate postage
+                                                </Link>,
+                                                <Link theme="red" variant="nav-red">
+                                                    <span><IoIosHome /></span>
+                                                    Find locations
+                                                </Link>
+                                            ],
+                                            right: null
+                                        }
+                                    }
+                                ]
+                            }
+                        />
+                    }
+                />
+            }
+            breadcrumb={
+                <Breadcrumb
+                    theme="red"
+                    lists={
+                        [
+                            { state: 'none', link: <Link theme="red" cls="white">Home &nbsp;</Link> },
+                            { state: 'active', link: <Link theme="red" cls="white">Help &#38; support</Link>}
+                        ]
+                    }
+                />
+            }
+            content={
+                <div>
+                    <h1 className="theme-red typography typography--header">Find a postcode</h1>
+                    <br/>
+                    <div className="container container--rnd" style={{width: "100%"}}>
+                        <div className="container__header">
+                            dd
+                        </div>
+                        <div className="container__body">
+                            
+                        </div>
+                    </div>
+                </div>
+            }
+            footer={null}
+         />
+    </Story>
+</Canvas>
