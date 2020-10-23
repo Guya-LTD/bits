@@ -30,16 +30,17 @@ class XpressView extends Component {
 
                 {/* CONTAINER */}
                 <div className='col-xs-12 container container--primary theme-red' style={{minHeight: "250px", width: "100%"}}>
-                    <div className="row center-xs container__header">
-                        <div className="col-xs-6">
+                    <div className="row center-md container__header" style={{margin: "0"}}>
+                        <div className="col-xs-12">
                             {breadcrumb}
                         </div>
                     </div>
                 </div>
                 {/* END OF CONTAINER */}
 
-                <div className="row center-xs" style={{marginTop: "-149px"}}>
-                    <div className="col-xs-6">
+                <div className="row" style={{marginTop: "-216px"}}>
+                    <div className="col-md-3" />
+                    <div className="col-md-6 col-xs-12">
                         {content}
                     </div>
                 </div>

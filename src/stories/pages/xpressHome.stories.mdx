@@ -52,9 +52,9 @@ import Link from '../../components/atoms/Link';
                     }
                     collapse={ 
                         {
-                            search: 'search',
-                            left: 'left',
-                            right: 'right'
+                            search: null,
+                            left: <Button theme="red" variant="danger" block>Track an Item</Button>,
+                            right: null
                         }
                     }
                     nav={
@@ -66,10 +66,10 @@ import Link from '../../components/atoms/Link';
                                         type: 'collapse',
                                         faciliter: {
                                             text: 'Tools',
-                                            open: <IconContext.Provider value={{ className: "icon" }}>
+                                            open: <IconContext.Provider value={{ className: "icon icon--sm" }}>
                                                     <IoIosArrowDown />
                                                 </IconContext.Provider>,
-                                            close: <IconContext.Provider value={{ className: "icon" }}>
+                                            close: <IconContext.Provider value={{ className: "icon icon--sm" }}>
                                                     <IoIosArrowUp />
                                                 </IconContext.Provider>,
                                         },
@@ -166,14 +166,7 @@ import Link from '../../components/atoms/Link';
                     ]}
                 />
             }
-            footer={
-                <Footer
-                    r1c2={<div class='box' />}
-                    r2c3={<div class='box' />}
-                    r2c4={<div class='box' />}
-                    r3={<div class='box' />}
-                />
-            }
+            footer={null}
          />
     </Story>
 </Canvas>
