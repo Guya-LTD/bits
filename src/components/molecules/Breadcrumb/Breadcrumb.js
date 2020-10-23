@@ -21,10 +21,13 @@ import { classnames } from '@bem-react/classnames';
 
 class Breadcrumb extends Component {
     render() {
-        const{lists}=this.props;
+        const{lists, color, theme}=this.props;
+
+        /* Theme name */
+        const themeName = theme ? 'theme-' + theme : null
 
         return(
-            <nav class="breadcrumb" aria-label="breadcrumbs">
+            <nav class={"breadcrumb" + " " + themeName} aria-label="breadcrumbs">
                 <ul>
                     {
                         lists.map((list) => {
