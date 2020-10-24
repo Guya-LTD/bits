@@ -2,6 +2,7 @@ import { ArgsTable } from '@storybook/addon-docs/blocks';
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 
 import Hero from '../../components/molecules/Hero';
+import Button from '../../components/atoms/Button';
 
 <Meta title="Molecules/Hero" component={Hero} />
 
@@ -17,4 +18,26 @@ import Hero from '../../components/molecules/Hero';
     </Story>
 </Canvas>
 
-## Sizes
+## Specs
+
+<Canvas>
+    <Story name="Shop Hero">
+        <Hero
+            left={
+                <div class='row'>
+                    <div class='col-xs-4'></div>
+                    <div class='col-xs-8'>
+                        <span class=''>
+                            <h1 className="theme-cornflower-blue typography typography--header-2">Sell on Guya Easy</h1>
+                        </span>
+                    </div>
+                </div>
+            }
+            right={
+                <div class="row image is-5by2">
+                    <img src="/images/lux-sell-desktop.png" />
+                </div>
+            }
+        />
+    </Story>
+</Canvas>
