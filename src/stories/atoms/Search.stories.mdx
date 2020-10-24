@@ -11,8 +11,21 @@ import Search from '../../components/atoms/Search';
 # Search
 
 <Canvas>
-    <Story name='Default'>
+    <Story name='Basic'>
         <Search
+            icon={
+                <IconContext.Provider value={{ className: "icon" }}>
+                    <IoIosSearch />
+                </IconContext.Provider>
+            }
+        />
+    </Story>
+</Canvas>
+
+<Canvas>
+    <Story name='Nav'>
+        <Search
+            variant="nav"
             icon={
                 <IconContext.Provider value={{ className: "icon" }}>
                     <IoIosSearch />
