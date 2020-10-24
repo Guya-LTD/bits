@@ -124,3 +124,62 @@ import Link from '../../components/atoms/Link';
         />
     </Story>
 </Canvas>
+
+
+<Canvas>
+    <Story name="Shop White Navbar">
+        <Navbar 
+            theme='cornflower-blue'
+            open={<IconContext.Provider value={{ className: "icon icon--lg" }}>
+                    <IoIosMenu />
+                </IconContext.Provider>}
+            close={<IconContext.Provider value={{ className: "icon" }}>
+                    <IoMdClose />
+                </IconContext.Provider>}
+            brand={
+                {
+                    small: <Logo src='/images/guya-shop-white.png' size='sm'/>,
+                    large: <Logo src='/images/guya-shop-white.png' size='sm'/>
+                }
+            }
+            search={
+                {
+                    sticky: <Search
+                                theme='cornflower-blue'
+                                icon={
+                                    <IconContext.Provider value={{ className: "icon" }}>
+                                        <IoIosSearch />
+                                    </IconContext.Provider>
+                                }
+                            />
+                }
+            }
+            collapse={ 
+                {
+                    search: null,
+                    left: <Search
+                                theme='cornflower-blue'
+                                variant="nav"
+                                icon={
+                                    <IconContext.Provider value={{ className: "icon" }}>
+                                        <IoIosSearch />
+                                    </IconContext.Provider>
+                                }
+                            />,
+                    right: <span>
+                            <Link theme="cornflower-blue" cls="link--nav-cornflower">Sign up</Link>
+                            <Link theme="cornflower-blue" cls="link--nav-cornflower">Log In</Link>
+                            <div className="divider-vr" />
+                            <a href="#" className="link nav-cornflower" style={{ marginLeft: "2px", verticalAlign: "-webkit-baseline-middle"}}>
+                                <span>
+                                    <svg height="27px" xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><title>Cart</title><circle cx='176' cy='416' r='16' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'/><circle cx='400' cy='416' r='16' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'/><path fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M48 80h64l48 272h256'/><path d='M160 288h249.44a8 8 0 007.85-6.43l28.8-144a8 8 0 00-7.85-9.57H128' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'/></svg>
+                                </span>
+                            </a>
+                            <Button theme='cornflower-blue' variant="primary">Sell</Button>
+                        </span> 
+                }
+            }
+            nav='Nav'
+        />
+    </Story>
+</Canvas>
