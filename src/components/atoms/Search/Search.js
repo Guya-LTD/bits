@@ -33,7 +33,8 @@ class Search extends Component {
             onChange,
             block,
             theme,
-            icon
+            icon,
+            variant
         } = this.props;
 
         /* Class name generator */
@@ -59,7 +60,7 @@ class Search extends Component {
                 <span className={addonClassnameText}>
                     {icon}
                 </span>
-                <Input type='search' placeholder={placeholder} required={required} value={value} size={size} onChange={onChange} block theme={theme}/>
+                <Input type='search' placeholder={placeholder} required={required} value={value} size={size} onChange={onChange} block theme={theme} variant={variant}/>
             </div>
         )
     }
