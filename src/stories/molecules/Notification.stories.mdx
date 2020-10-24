@@ -1,5 +1,7 @@
 import { ArgsTable } from '@storybook/addon-docs/blocks';
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { IconContext } from "react-icons";
+import { IoIosFlag } from "react-icons/io";
 
 import Notification from '../../components/molecules/Notification';
 
@@ -32,6 +34,25 @@ import Notification from '../../components/molecules/Notification';
             type='alert'
             theme='royal-blue'
             message={<p>message</p>}
+        />
+    </Story>
+</Canvas>
+
+<Canvas>
+    <Story name="Money back">
+        <Notification 
+            size="sm"
+            href="a"
+            variant="bottom-border"
+            cls="row center-xs"
+            message={
+                <span>
+                    <IconContext.Provider value={{ className: "icon" }}>
+                        <IoIosFlag />
+                    </IconContext.Provider>
+                    <span>Money Back Guarantee.</span>
+                </span>
+            }
         />
     </Story>
 </Canvas>
