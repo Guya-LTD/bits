@@ -35,6 +35,7 @@ class Notification extends Component {
             type,
             theme,
             variant,
+            cls
         } = this.props;
 
         /* Class name generator */
@@ -57,13 +58,13 @@ class Notification extends Component {
 
         if(href != null)
             return (
-                <a className={classnametext} href={href}>
+                <a className={classnametext + " " + cls} href={href}>
                     <NotificationContent cn={classname} title={title} message={message} close={close} /> 
                 </a>
             )
         else 
             return (
-                <div className={classnametext}>
+                <div className={classnametext + " " + cls}>
                     <NotificationContent cn={classname} title={title} message={message} close={close} /> 
                 </div>
             )
