@@ -76,7 +76,7 @@ class Navbar extends Component {
                                 {collapse.left}
                             </div>
                             <div class='col-xs'>
-                                <div class='row end-xs'>
+                                <div class='row end-md'>
                                     <div class='navbar__collapse__search'>
                                         {collapse.search}
                                     </div>
