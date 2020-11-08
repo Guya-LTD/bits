@@ -1,0 +1,22 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import ShopHome from '../../components/templates/ShopHome';
+
+<Meta title="Templates/ShopHome" component={ShopHome} />
+
+# Shop Home
+
+<Canvas>
+    <Story name="Basic">
+        <ShopHome 
+            header={<div class="box" />}
+            notification={<div class="box" />}
+            hero={<div class="box" />}
+            services={<div class="box" />}
+            brands={<div class="box" />}
+            products={<div class="box" />}
+            footer={<div class="box" />}
+        />
+    </Story>
+</Canvas>
