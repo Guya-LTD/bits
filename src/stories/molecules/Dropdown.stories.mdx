@@ -7,6 +7,10 @@ import Dropdown from '../../components/molecules/Dropdown';
 import Avatar from '../../components/atoms/Avatar';
 import Link from '../../components/atoms/Link';
 
+import PanelTemplate, {
+    Language
+} from 'react-ionicons-icon';
+
 <Meta title="Molecules/Dropdown" component={Dropdown} />
 
 
@@ -31,6 +35,27 @@ import Link from '../../components/atoms/Link';
                 <Link theme="royal-blue" cls="dropdown-item">
                     <span><IoIosLogOut /></span>
                     Logout
+                </Link>
+            </Dropdown>
+        </div>
+    </Story>
+</Canvas>
+
+
+<Canvas>
+    <Story name='Admin panel hovedred language dropdown'>
+        <div style={{marginTop: "200px", marginLeft: "200px"}}>
+            <Dropdown
+                type="is-hoverable is-up is-artl"
+                trigger={
+                    <Language />
+                }
+            >
+                <Link theme="royal-blue" cls="dropdown-item">
+                    English
+                </Link>
+                <Link theme="royal-blue" cls="dropdown-item">
+                    እማርኛ
                 </Link>
             </Dropdown>
         </div>
