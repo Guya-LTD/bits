@@ -1,0 +1,25 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+<Meta title="Atoms/Pagination" />
+
+
+# Pagination
+
+## Basic Usage
+
+<Canvas>
+    <Story name='Basic'>
+        <div class="pagination">
+            <a class="pagination__control" href="#">&laquo;</a>
+            <div class="pagination__pages">
+                <a href="#">1</a>
+                <a class="active" href="#">2</a>
+                <a href="#">3</a>
+                <span class="pagination-ellipsis">&hellip;</span>
+                <a href="#">10</a>
+            </div>
+            <a class="pagination__control" href="#">&raquo;</a>
+        </div>
+    </Story>
+</Canvas>
