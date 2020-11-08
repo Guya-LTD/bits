@@ -3,10 +3,19 @@ import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 import { IconContext } from "react-icons";
 import {
     IoIosArrowDown,
-    IoIosArrowUp
+    IoIosArrowUp,
     }from "react-icons/io";
 
+import { 
+  LayersOutline,
+  ChevronUpOutline,
+  ChevronDownOutline,
+  AnalyticsOutline,
+  ChatboxEllipsesOutline
+  } from 'react-ionicons-icon';
+
 import List from '../../components/molecules/List';
+import Link from '../../components/atoms/Link';
 
 <Meta title="Molecules/List" component={List} />
 
@@ -64,6 +73,29 @@ import List from '../../components/molecules/List';
                             <span class="col-xs-6">Sunday</span> <span class="col-xs-6">7:00am - 9:00pm</span>
                         </span>,
                     ] 
+                }
+            ]
+        }/>
+    </Story>
+</Canvas>
+
+<Canvas>
+    <Story name="Dashboard">
+        <List variant="nav" lists={
+            [
+                { type: 'faciliter', faciliter: { text: 'Collapse', icon: <LayersOutline size="20px" />, open: <ChevronDownOutline size="20px" />, close: <ChevronUpOutline size="20px" />} },
+                { type: 'collapse', collapse: [
+                    <Link>
+                        <span><AnalyticsOutline size="15px" /></span>
+                        Statics
+                    </Link>
+                ] },
+                { 
+                    type: 'single', 
+                    list: <Link size="sm" theme="royal-blue">
+                            <span><ChatboxEllipsesOutline size="20px" /></span>
+                            Reviews
+                          </Link>
                 }
             ]
         }/>
