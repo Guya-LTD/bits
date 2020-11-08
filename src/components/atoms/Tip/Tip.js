@@ -22,7 +22,7 @@ import { classnames } from '@bem-react/classnames';
 class Tip extends Component {
     render() {
         /* Props */
-        const {bsPrefix, theme, children} = this.props;
+        const {bsPrefix, theme, children, variant} = this.props;
 
         /* Class name generator */
         const cn = withNaming({ e: '__', m: '', v: '--' })
@@ -36,6 +36,7 @@ class Tip extends Component {
         /* Classnames */
         const classnametext = classnames(
             classname(),
+            classname({'': variant}),
             themeName
         );
 

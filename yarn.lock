@@ -13157,6 +13157,13 @@ react-inspector@^5.0.1:
     is-dom "^1.0.0"
     prop-types "^15.0.0"
 
+react-ionicons-icon@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/react-ionicons-icon/-/react-ionicons-icon-0.1.1.tgz#ac2cb4f9e652265698165175b96a129d5aa9eafc"
+  integrity sha512-HvDlt3GPbenKUPryQu04omvgVnlCfFP+Dp7eFNbfSDtXP9dCw9beOr547io9Uo851p9G04peCls6BbqJz+rY1Q==
+  dependencies:
+    prop-types "^15.7.2"
+
 react-is@^16.12.0, react-is@^16.13.1, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -13277,6 +13284,11 @@ react-syntax-highlighter@^12.2.1:
     lowlight "1.12.1"
     prismjs "^1.8.4"
     refractor "^2.4.1"
+
+react-table@^7.6.1:
+  version "7.6.1"
+  resolved "https://registry.yarnpkg.com/react-table/-/react-table-7.6.1.tgz#33ad2bfc58de619678694c5452597544f4864266"
+  integrity sha512-XQyvombPoFbNiDHWAXdxbN78kFpsT1/aJuRSupFfBhO3FJtEVIIq2xbV1NvLzrd1YwfCYRm07ln5OHlfz0SXBg==
 
 react-textarea-autosize@^8.1.1:
   version "8.2.0"
