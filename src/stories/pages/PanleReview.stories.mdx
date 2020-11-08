@@ -1,0 +1,213 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import {
+    Language,
+    LogOutOutline,
+    LayersOutline,
+    ChevronUpOutline,
+    ChevronDownOutline,
+    AnalyticsOutline,
+    Search as SearchIcon,
+    Star,
+    ChatboxEllipsesOutline
+} from 'react-ionicons-icon';
+
+import PanelTemplate, {
+    PanelContainer,
+    PanelContainerHeader,
+    PanelContainerBody,
+    PanelContainerFooter,
+    PanelContainerView
+} from '../../components/templates/Panel';
+import Sidebar from '../../components/molecules/Sidebar';
+import Logo from '../../components/molecules/Logo';
+import ProfileLink from '../../components/molecules/ProfileLink';
+import Dropdown from '../../components/molecules/Dropdown';
+import Avatar from '../../components/atoms/Avatar';
+import Link from '../../components/atoms/Link';
+import List from '../../components/molecules/List';
+import Card from '../../components/organisms/Card';
+import Typography from '../../components/atoms/Typography';
+import Search from '../../components/atoms/Search';
+import Tip from '../../components/atoms/Tip';
+
+<Meta title="Pages/PanelReview" component={PanelTemplate} />
+
+# Panel Review Page
+
+<Canvas>
+    <Story name='With Container Body'>
+        <PanelTemplate 
+            sidebar={ 
+                <Sidebar 
+                    theme='royal-blue'
+                    menu={
+                        {
+                            primary: {
+                                logo: <Logo src='/images/admin-panel-logo-outline.png' size='xs'/>,
+                                top: 
+                                    <Dropdown
+                                        type="is-hoverable is-up is-artl"
+                                        trigger={
+                                            <Language fill="white" />
+                                        }
+                                    >
+                                        <Link theme="royal-blue" cls="dropdown-item">
+                                            English
+                                        </Link>
+                                        <Link theme="royal-blue" cls="dropdown-item">
+                                            እማርኛ
+                                        </Link>
+                                    </Dropdown>,
+                                bottom: 
+                                    <Dropdown
+                                        type="is-hoverable is-up is-artl"
+                                        trigger={
+                                            <Avatar />
+                                        }
+                                    >
+                                        <ProfileLink
+                                            theme="royal-blue"
+                                            photo={ <Avatar size="sm" /> }
+                                            name="Demo"
+                                            description="demo@example.com"
+                                            cls="dropdown-item"
+                                        />
+                                        <Link theme="royal-blue" cls="dropdown-item">
+                                            <span><LogOutOutline size="18px" /></span>
+                                            Logout
+                                        </Link>
+                                    </Dropdown>
+                            },
+                            secondary: 
+                                <List variant="nav" lists={
+                                    [
+                                        { type: 'faciliter', faciliter: { text: 'Dashboard', icon: <LayersOutline size="20px" />, open: <ChevronDownOutline size="20px" />, close: <ChevronUpOutline size="20px" />} },
+                                        { type: 'collapse', collapse: [
+                                            <Link size="xs" theme='royal-blue'>
+                                                <span><AnalyticsOutline size="15px" /></span>
+                                                Statics
+                                            </Link>
+                                        ] },
+                                        { 
+                                            type: 'single', 
+                                            list: <Link size="sm" theme="royal-blue">
+                                                    <span><ChatboxEllipsesOutline size="20px" /></span>
+                                                    Reviews
+                                                  </Link>
+                                        }
+                                    ]
+                                }/>
+                        }
+                    }
+                />
+            }
+        >
+            <PanelContainer>
+                <PanelContainerView>
+                    <div className="row">
+                        {/* Top Header */}
+                        <div className="row col-xs-12">
+                            {/* Top Header Left */}
+                            <div className="col-xs-8">
+                                <Typography size='h3'>Product Review</Typography>
+                            </div>
+                            {/* End of Top Header Left */}
+                            {/* Top Header Right */}
+                            <div className="col-xs-4 end-xs">
+                                <div className="col-xs-5">
+                                    <Search
+                                            theme="royal-blue"
+                                            size="sm"
+                                            icon={
+                                                <SearchIcon size="15px" />
+                                            }
+                                        />
+                                </div>
+                            </div>
+                            {/* End of Top Header Right */}
+                        </div>
+                        {/* End of Top Header */}
+                        <br /><br /><br /><br />
+                        {/* Row Two */}
+                        <div className="row col-xs-12">
+                            <table class="table table--hoverable theme-royal-blue">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Customer</th>
+                                            <th>Product</th>
+                                            <th>Rating</th>
+                                            <th>Comment</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>11/6/2020</td>
+                                            <td>Braxton Mitchell</td>
+                                            <td>Black Auburn</td>
+                                            <td>
+                                                <span>
+                                                    <Star size="15px" />
+                                                    <Star size="15px" />
+                                                </span>
+                                            </td>
+                                            <td>Non possimus odio et. Accusamus ipsam mollitia est ad...</td>
+                                            <td><Tip theme="royal-blue" variant="yellow">Pending</Tip></td>
+                                        </tr>
+                                        <tr>
+                                            <td>11/6/2020</td>
+                                            <td>Braxton Mitchell</td>
+                                            <td>Black Auburn</td>
+                                            <td>
+                                                <span>
+                                                    <Star size="15px" />
+                                                    <Star size="15px" />
+                                                    <Star size="15px" />
+                                                </span>
+                                            </td>
+                                            <td>Non possimus odio et. Accusamus ipsam mollitia est ad...</td>
+                                            <td><Tip theme="royal-blue" variant="green">Accepted</Tip></td>
+                                        </tr>
+                                        <tr>
+                                            <td>11/6/2020</td>
+                                            <td>Braxton Mitchell</td>
+                                            <td>Black Auburn</td>
+                                            <td>
+                                                <span>
+                                                    <Star size="15px" />
+                                                    <Star size="15px" />
+                                                    <Star size="15px" />
+                                                    <Star size="15px" />
+                                                    <Star size="15px" />
+                                                </span>
+                                            </td>
+                                            <td>Non possimus odio et. Accusamus ipsam mollitia est ad...</td>
+                                            <td><Tip theme="royal-blue" variant="red">Rejected</Tip></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                        </div>
+                        {/* End of Row Two */}
+                        {/* Pagination */}
+                        <div style={{marginTop: "35px"}}>
+                            <div class="pagination">
+                                <a class="pagination__control" href="#">&laquo;</a>
+                                <div class="pagination__pages">
+                                    <a href="#">1</a>
+                                    <a class="active" href="#">2</a>
+                                    <a href="#">3</a>
+                                    <span class="pagination-ellipsis">&hellip;</span>
+                                    <a href="#">10</a>
+                                </div>
+                                <a class="pagination__control" href="#">&raquo;</a>
+                            </div>
+                        </div>
+                        {/* End of Pagination */}
+                    </div>
+                </PanelContainerView>
+            </PanelContainer>
+        </PanelTemplate>
+    </Story>
+</Canvas> 
