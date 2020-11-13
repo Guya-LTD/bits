@@ -1,0 +1,136 @@
+import { ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import {
+    Language,
+    LogOutOutline,
+    LayersOutline,
+    ChevronUpOutline,
+    ChevronDownOutline,
+    AnalyticsOutline,
+    Search as SearchIcon,
+    Star,
+    ChatboxEllipsesOutline,
+    ChevronBackOutline
+} from 'react-ionicons-icon';
+
+import PanelTemplate, {
+    PanelContainer,
+    PanelContainerHeader,
+    PanelContainerBody,
+    PanelContainerFooter,
+    PanelContainerView
+} from '../../components/templates/Panel';
+import Sidebar from '../../components/molecules/Sidebar';
+import Logo from '../../components/molecules/Logo';
+import ProfileLink from '../../components/molecules/ProfileLink';
+import Dropdown from '../../components/molecules/Dropdown';
+import Avatar from '../../components/atoms/Avatar';
+import Link from '../../components/atoms/Link';
+import List from '../../components/molecules/List';
+import Card from '../../components/organisms/Card';
+import Typography from '../../components/atoms/Typography';
+import Search from '../../components/atoms/Search';
+import Tip from '../../components/atoms/Tip';
+
+<Meta title="Pages/PanelReviewView" component={PanelTemplate} />
+
+# Panel Review Page
+
+<Canvas>
+    <Story name='With Container Body'>
+        <PanelTemplate 
+            sidebar={ 
+                <Sidebar 
+                    theme='royal-blue'
+                    menu={
+                        {
+                            primary: {
+                                logo: <Logo src='/images/admin-panel-logo-outline.png' size='xs'/>,
+                                top: 
+                                    <Dropdown
+                                        type="is-hoverable is-up is-artl"
+                                        trigger={
+                                            <Language fill="white" />
+                                        }
+                                    >
+                                        <Link theme="royal-blue" cls="dropdown-item">
+                                            English
+                                        </Link>
+                                        <Link theme="royal-blue" cls="dropdown-item">
+                                            እማርኛ
+                                        </Link>
+                                    </Dropdown>,
+                                bottom: 
+                                    <Dropdown
+                                        type="is-hoverable is-up is-artl"
+                                        trigger={
+                                            <Avatar />
+                                        }
+                                    >
+                                        <ProfileLink
+                                            theme="royal-blue"
+                                            photo={ <Avatar size="sm" /> }
+                                            name="Demo"
+                                            description="demo@example.com"
+                                            cls="dropdown-item"
+                                        />
+                                        <Link theme="royal-blue" cls="dropdown-item">
+                                            <span><LogOutOutline size="18px" /></span>
+                                            Logout
+                                        </Link>
+                                    </Dropdown>
+                            },
+                            secondary: 
+                                <List variant="nav" lists={
+                                    [
+                                        { type: 'faciliter', faciliter: { text: 'Dashboard', icon: <LayersOutline size="20px" />, open: <ChevronDownOutline size="20px" />, close: <ChevronUpOutline size="20px" />} },
+                                        { type: 'collapse', collapse: [
+                                            <Link size="xs" theme='royal-blue'>
+                                                <span><AnalyticsOutline size="15px" /></span>
+                                                Statics
+                                            </Link>
+                                        ] },
+                                        { 
+                                            type: 'single', 
+                                            list: <Link size="sm" theme="royal-blue" cls="active">
+                                                    <span><ChatboxEllipsesOutline size="20px" /></span>
+                                                    Reviews
+                                                  </Link>
+                                        }
+                                    ]
+                                }/>
+                        }
+                    }
+                />
+            }
+        >
+            <PanelContainer>
+                <PanelContainerHeader>
+                    <Link size="lg" theme="royal-blue">
+                        <span><ChevronBackOutline /></span>
+                        Review - Braxton Mitchell
+                    </Link>
+                </PanelContainerHeader>
+            </PanelContainer>
+            <div className="col-xs-2" />
+            <PanelContainer>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <PanelContainerView>
+                            <div className="row">
+                                dsf
+                            </div>
+                        </PanelContainerView>
+                    </div>
+                    <div class="col-xs-6">
+                        <PanelContainerView>
+                            <div className="row">
+                                dsf
+                            </div>
+                        </PanelContainerView>
+                    </div>
+                </div>
+            </PanelContainer>            
+        </PanelTemplate>
+    </Story>
+</Canvas> 
