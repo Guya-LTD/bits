@@ -42,7 +42,7 @@ class Navbar extends Component {
 
     render () {
         /* Props */
-        const {bsPrefix, brand, search, collapse, open, close, theme, nav, navRight} = this.props;
+        const {bsPrefix, brand, search, collapse, open, close, theme, nav} = this.props;
 
         /* Class name generator */
         const cn = withNaming({ e: '__', m: '', v: '--' });
@@ -90,11 +90,8 @@ class Navbar extends Component {
                 </div> {/* End of top bar */}
                 <div className='row navbar__row'>
                     <div class='col-xs-1'></div>
-                    <div className='col-xs-8 navbar__collapse navbar__collapse--sm'>
+                    <div className='col-xs-11 navbar__collapse navbar__collapse--sm'>
                         {nav}
-                    </div>
-                    <div className='col-xs-3 navbar__collapse navbar__collapse--sm'>
-                        {navRight}
                     </div>
                 </div>
             </nav>
@@ -130,7 +127,6 @@ Navbar.defaultProps = {
     search: { sticky: null },
     collapse: { left: null, right: null, search: null},
     nav: null,
-    navRight: null,
 }
 
 /**

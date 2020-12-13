@@ -338,7 +338,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/molecules/navbar@0.0.8": {
+    "guya-ltd.gcss/molecules/navbar@0.0.9": {
         "files": [
             {
                 "name": "Navbar.js",
