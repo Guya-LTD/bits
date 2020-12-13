@@ -121,6 +121,21 @@ import Link from '../../components/atoms/Link';
                 }
             }
             nav='Nav'
+            navRight={
+                <Dropdown
+                        type="is-hoverable"
+                        trigger={
+                            <Language size="22px" fill="#858585" />
+                        }
+                        >
+                        <Link theme="red" cls="dropdown-item">
+                            English
+                        </Link>
+                        <Link theme="red" cls="dropdown-item">
+                            እማርኛ
+                        </Link>
+                    </Dropdown>
+            }
         />
     </Story>
 </Canvas>
