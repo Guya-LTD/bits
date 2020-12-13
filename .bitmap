@@ -252,14 +252,14 @@
     "guya-ltd.gcss/molecules/hero@0.0.2": {
         "files": [
             {
+                "name": "Hero.js",
                 "relativePath": "src/components/molecules/Hero/Hero.js",
-                "test": false,
-                "name": "Hero.js"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/molecules/Hero/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             }
         ],
         "mainFile": "src/components/molecules/Hero/index.js",
@@ -323,14 +323,14 @@
     "guya-ltd.gcss/molecules/nav@0.0.3": {
         "files": [
             {
+                "name": "Nav.js",
                 "relativePath": "src/components/molecules/Nav/Nav.js",
-                "test": false,
-                "name": "Nav.js"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/molecules/Nav/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             }
         ],
         "mainFile": "src/components/molecules/Nav/index.js",
@@ -338,47 +338,47 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/molecules/navbar@0.0.6": {
+    "guya-ltd.gcss/molecules/navbar@0.0.7": {
         "files": [
             {
+                "name": "Navbar.js",
                 "relativePath": "src/components/molecules/Navbar/Navbar.js",
-                "test": false,
-                "name": "Navbar.js"
+                "test": false
             },
             {
+                "name": "NavbarBrand.js",
                 "relativePath": "src/components/molecules/Navbar/__Brand/NavbarBrand.js",
-                "test": false,
-                "name": "NavbarBrand.js"
+                "test": false
             },
             {
+                "name": "NavbarBrandLarge.js",
                 "relativePath": "src/components/molecules/Navbar/__Brand/__Large/NavbarBrandLarge.js",
-                "test": false,
-                "name": "NavbarBrandLarge.js"
+                "test": false
             },
             {
+                "name": "NavbarBrandSmall.js",
                 "relativePath": "src/components/molecules/Navbar/__Brand/__Small/NavbarBrandSmall.js",
-                "test": false,
-                "name": "NavbarBrandSmall.js"
+                "test": false
             },
             {
+                "name": "NavbarMenu.js",
                 "relativePath": "src/components/molecules/Navbar/__Menu/NavbarMenu.js",
-                "test": false,
-                "name": "NavbarMenu.js"
+                "test": false
             },
             {
+                "name": "NavbarMenuLeft.js",
                 "relativePath": "src/components/molecules/Navbar/__Menu/__Left/NavbarMenuLeft.js",
-                "test": false,
-                "name": "NavbarMenuLeft.js"
+                "test": false
             },
             {
+                "name": "NavbarMenuRight.js",
                 "relativePath": "src/components/molecules/Navbar/__Menu/__Right/NavbarMenuRight.js",
-                "test": false,
-                "name": "NavbarMenuRight.js"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/molecules/Navbar/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             }
         ],
         "mainFile": "src/components/molecules/Navbar/index.js",
@@ -673,14 +673,14 @@
     "guya-ltd.gcss/templates/xpresshome@0.0.3": {
         "files": [
             {
+                "name": "XpressHome.js",
                 "relativePath": "src/components/templates/XpressHome/XpressHome.js",
-                "test": false,
-                "name": "XpressHome.js"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/templates/XpressHome/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             }
         ],
         "mainFile": "src/components/templates/XpressHome/index.js",
