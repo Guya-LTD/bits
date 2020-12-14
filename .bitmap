@@ -670,7 +670,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/templates/xpresshome@0.0.3": {
+    "guya-ltd.gcss/templates/xpresshome@0.0.4": {
         "files": [
             {
                 "name": "XpressHome.js",

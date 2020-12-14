@@ -21,7 +21,7 @@ import { withNaming } from '@bem-react/classname';
 class XpressHome extends Component {
     render() {
         /* Props */
-        const{bsPrefix, header, hero, track, footer, pricing} = this.props;
+        const{bsPrefix, header, hero, track, footer, children} = this.props;
         
         return(
             <div>
@@ -44,7 +44,7 @@ class XpressHome extends Component {
                 </div>
                 <div className="">
                     {/* Pricing Table */}
-                    {pricing}
+                    {children}
                 </div>
                 {footer}
             </div>
