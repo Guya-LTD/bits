@@ -48,7 +48,7 @@ class Button extends Component {
         );
 
         if(href && type === 'link')
-            return <ButtonLink cn={classname} theme={themeName} children={children} href={href} />
+            return <ButtonLink cn={classname} size={size} variant={variant}  theme={themeName} children={children} href={href} />
         else
             return (
                 <button type={type} className={classnametext} onClick={onClick}>
