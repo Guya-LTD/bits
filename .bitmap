@@ -417,7 +417,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/molecules/pricetable@0.0.3": {
+    "guya-ltd.gcss/molecules/pricetable@0.0.4": {
         "files": [
             {
                 "name": "PriceTable.js",

@@ -75,8 +75,8 @@ class PriceTable extends Component {
                                                 <div className="generic_price_tag clearfix">
                                                     <span className="price">
                                                         <span className="sign">{sign && "Birr"}</span>
-                                                        <span className="currency">{list.price.split(".")[0]}</span>
-                                                        <span className="cent">{list.price.split(".")[1]}</span>
+                                                        <span className="currency">{list.price.toString().split(".")[0]}</span>
+                                                        <span className="cent">{list.price.toString().split(".")[1]}</span>
                                                         <span className="month">{per && "/Km"}</span>
                                                     </span>
                                                 </div>
