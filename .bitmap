@@ -417,17 +417,17 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/molecules/pricetable@0.0.2": {
+    "guya-ltd.gcss/molecules/pricetable@0.0.3": {
         "files": [
             {
+                "name": "PriceTable.js",
                 "relativePath": "src/components/molecules/PriceTable/PriceTable.js",
-                "test": false,
-                "name": "PriceTable.js"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/molecules/PriceTable/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             }
         ],
         "mainFile": "src/components/molecules/PriceTable/index.js",
