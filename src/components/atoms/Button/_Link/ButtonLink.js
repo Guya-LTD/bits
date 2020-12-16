@@ -1,4 +1,5 @@
 import React from 'react';
+import { classnames } from '@bem-react/classnames';
 
 /**
  * A Button Link component represents an object or entity.
@@ -16,11 +17,17 @@ import React from 'react';
  * @example 
  */
 
-const ButtonLink = ({cn, theme, href, children}) => {
+const ButtonLink = ({cn, theme, href, children, size, variant}) => {
     /* Class names collection */
-    const classname = cn({'': 'link'})
+    const classname = classnames(
+        cn({'': 'link'}),
+        cn({'': size}),
+        cn({'': variant}),
+        theme
+    )
+    
 
-    return <a href={href} className={classname + theme}>{children}</a>
+    return <a href={href} className={classname}>{children}</a>
 }
 
 /**

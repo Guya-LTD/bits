@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withNaming } from '@bem-react/classname';
-import { classnames } from '@bem-react/classnames'
+import { classnames } from '@bem-react/classnames';
 
 import ButtonLink from './_Link/ButtonLink';
 import ButtonIcon from './__Icon/ButtonIcon';
@@ -25,7 +25,7 @@ import ButtonIcon from './__Icon/ButtonIcon';
 class Button extends Component {
     render() {
         /* Props */
-        const {bsPrefix, children, size, type, href, icon, theme, variant, block} = this.props;
+        const {bsPrefix, children, size, type, href, icon, theme, variant, block, onClick} = this.props;
 
         /* Class name generator */
         const cn = withNaming({ e: '__', m: '', v: '--' })
@@ -48,10 +48,10 @@ class Button extends Component {
         );
 
         if(href && type === 'link')
-            return <ButtonLink cn={classname} theme={themeName} children={children} href={href} />
+            return <ButtonLink cn={classname} size={size} variant={variant}  theme={themeName} children={children} href={href} />
         else
             return (
-                <button type={type} className={classnametext}>
+                <button type={type} className={classnametext} onClick={onClick}>
                     {!!(icon)? <ButtonIcon cn={classname} icon={icon} /> : null}
                     {children}
                 </button>
@@ -109,6 +109,12 @@ Button.propTypes = {
      */
     variant: PropTypes.oneOf(['primary', 'success', 'warning', 'danger']),
     block: PropTypes.bool,
+    /**
+     * @description On click function
+     * @property {element}
+     * @default null
+     */
+    onClick: PropTypes.element,
 }
 
 Button.defaultProps = {
