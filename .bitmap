@@ -80,7 +80,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/atoms/link@0.0.5": {
+    "guya-ltd.gcss/atoms/link@0.0.6": {
         "files": [
             {
                 "relativePath": "src/components/atoms/Link/Link.js",
@@ -209,6 +209,24 @@
             }
         ],
         "mainFile": "src/components/molecules/Blockquote/index.js",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "guya-ltd.gcss/molecules/breadcrumb@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/molecules/Breadcrumb/Breadcrumb.js",
+                "test": false,
+                "name": "Breadcrumb.js"
+            },
+            {
+                "relativePath": "src/components/molecules/Breadcrumb/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/molecules/Breadcrumb/index.js",
+        "trackDir": "src/components/molecules/Breadcrumb",
         "origin": "AUTHORED",
         "exported": true
     },
@@ -450,6 +468,24 @@
         ],
         "mainFile": "src/components/molecules/PriceTable/index.js",
         "trackDir": "src/components/molecules/PriceTable",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "guya-ltd.gcss/molecules/profilelink@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/molecules/ProfileLink/ProfileLink.js",
+                "test": false,
+                "name": "ProfileLink.js"
+            },
+            {
+                "relativePath": "src/components/molecules/ProfileLink/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/molecules/ProfileLink/index.js",
+        "trackDir": "src/components/molecules/ProfileLink",
         "origin": "AUTHORED",
         "exported": true
     },
@@ -703,6 +739,24 @@
         ],
         "mainFile": "src/components/templates/XpressHome/index.js",
         "trackDir": "src/components/templates/XpressHome",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "guya-ltd.gcss/templates/xpressview@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/templates/XpressView/XpressView.js",
+                "test": false,
+                "name": "XpressView.js"
+            },
+            {
+                "relativePath": "src/components/templates/XpressView/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/templates/XpressView/index.js",
+        "trackDir": "src/components/templates/XpressView",
         "origin": "AUTHORED",
         "exported": true
     },
