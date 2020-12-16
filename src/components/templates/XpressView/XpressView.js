@@ -22,7 +22,7 @@ import Breadcrumb from '../../molecules/Breadcrumb';
 class XpressView extends Component {
     render() {
         /* Props */
-        const{header, breadcrumb, content, footer}=this.props;
+        const{header, breadcrumb, content, footer, children}=this.props;
         
         return(
             <div>
@@ -41,7 +41,7 @@ class XpressView extends Component {
                 <div className="row" style={{marginTop: "-216px"}}>
                     <div className="col-md-3" />
                     <div className="col-md-6 col-xs-12">
-                        {content}
+                        {children}
                     </div>
                 </div>
 
