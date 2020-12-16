@@ -62,7 +62,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/atoms/link@0.0.2": {
+    "guya-ltd.gcss/atoms/link@0.0.6": {
         "files": [
             {
                 "name": "Link.js",
