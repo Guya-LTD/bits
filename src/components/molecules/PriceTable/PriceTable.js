@@ -19,7 +19,26 @@ import PropTypes from 'prop-types';
 
 class PriceTable extends Component {
     render() {
-        const{title, lists}=this.props;
+        const{
+            title, 
+            lists, 
+            sign, 
+            locale,
+            weight_name,
+            weight_unit,
+            length_name,
+            length_unit,
+            width_name,
+            width_unit,
+            height_name,
+            height_unit,
+            href,
+            text,
+            per
+        }=this.props;
+
+        var loc = !locale ? 'en' : 'am'
+
         return(
             <div id="generic_price_table" style={{background: "#eee"}}>   
                 <section>
@@ -48,19 +67,20 @@ class PriceTable extends Component {
                                                     {/* HEADER START */}
                                                     <div className="head_bg" />
                                                     <div className="head">
-                                                        <span>{list.name}</span>
+                                                        <span>{list['name_' + loc]}</span>
                                                     </div>
                                                     {/* HEADER END */}
                                                 </div>
                                                 {/* HEADER CONTENT END */}
 
                                                 {/* PRICE START */}
+                                                
                                                 <div className="generic_price_tag clearfix">
                                                     <span className="price">
-                                                        <span className="sign">{list.sign && "Birr"}</span>
-                                                        <span className="currency">{list.currency}</span>
-                                                        <span className="cent">{list.cent}</span>
-                                                        <span className="month">{list.per && "/Km"}</span>
+                                                        <span className="sign">{sign && "Birr"}</span>
+                                                        <span className="currency">{list.price.toString().split(".")[0]}</span>
+                                                        <span className="cent">{list.price.toString().split(".")[1]}</span>
+                                                        <span className="month">{per && "/Km"}</span>
                                                     </span>
                                                 </div>
                                                 {/* PRICE END */}
@@ -70,20 +90,17 @@ class PriceTable extends Component {
                                             {/* FEATURE LIST START */}
                                             <div className="generic_feature_list">
                                                 <ul>
-                                                    {
-                                                        list.features.map((feature) => {
-                                                            return(
-                                                            <li><span>{feature.value}</span> {feature.name}</li>
-                                                            )
-                                                        })
-                                                    }
+                                                    <li><span>{weight_name}</span> {list.weight}{weight_unit}</li>
+                                                    <li><span>{length_name}</span> {list.length}{length_unit}</li>
+                                                    <li><span>{width_name}</span>  {list.width}{width_unit}</li>
+                                                    <li><span>{height_name}</span> {list.height}{height_unit}</li>
                                                 </ul>
                                             </div>
                                             {/* FEATURE LIST END */}
 
                                             {/* BUTTON START */}
                                             <div className="generic_price_btn clearfix">
-                                                <a className="" href={list.href}>{list.text}</a>
+                                                <a className="" href={href}>{text}</a>
                                             </div>
                                             {/* BUTTON END */}
                                         </div>
