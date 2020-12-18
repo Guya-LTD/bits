@@ -66,14 +66,14 @@
     "guya-ltd.gcss/atoms/input@0.0.5": {
         "files": [
             {
+                "name": "Input.js",
                 "relativePath": "src/components/atoms/Input/Input.js",
-                "test": false,
-                "name": "Input.js"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/atoms/Input/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             }
         ],
         "mainFile": "src/components/atoms/Input/index.js",
@@ -118,14 +118,14 @@
     "guya-ltd.gcss/atoms/tip@0.0.2": {
         "files": [
             {
+                "name": "Tip.js",
                 "relativePath": "src/components/atoms/Tip/Tip.js",
-                "test": false,
-                "name": "Tip.js"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/atoms/Tip/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             }
         ],
         "mainFile": "src/components/atoms/Tip/index.js",
@@ -377,44 +377,44 @@
     "guya-ltd.gcss/molecules/navbar@0.0.9": {
         "files": [
             {
+                "name": "Navbar.js",
                 "relativePath": "src/components/molecules/Navbar/Navbar.js",
-                "test": false,
-                "name": "Navbar.js"
+                "test": false
             },
             {
+                "name": "NavbarBrand.js",
                 "relativePath": "src/components/molecules/Navbar/__Brand/NavbarBrand.js",
-                "test": false,
-                "name": "NavbarBrand.js"
+                "test": false
             },
             {
+                "name": "NavbarBrandLarge.js",
                 "relativePath": "src/components/molecules/Navbar/__Brand/__Large/NavbarBrandLarge.js",
-                "test": false,
-                "name": "NavbarBrandLarge.js"
+                "test": false
             },
             {
+                "name": "NavbarBrandSmall.js",
                 "relativePath": "src/components/molecules/Navbar/__Brand/__Small/NavbarBrandSmall.js",
-                "test": false,
-                "name": "NavbarBrandSmall.js"
+                "test": false
             },
             {
+                "name": "NavbarMenu.js",
                 "relativePath": "src/components/molecules/Navbar/__Menu/NavbarMenu.js",
-                "test": false,
-                "name": "NavbarMenu.js"
+                "test": false
             },
             {
+                "name": "NavbarMenuLeft.js",
                 "relativePath": "src/components/molecules/Navbar/__Menu/__Left/NavbarMenuLeft.js",
-                "test": false,
-                "name": "NavbarMenuLeft.js"
+                "test": false
             },
             {
+                "name": "NavbarMenuRight.js",
                 "relativePath": "src/components/molecules/Navbar/__Menu/__Right/NavbarMenuRight.js",
-                "test": false,
-                "name": "NavbarMenuRight.js"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/molecules/Navbar/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             }
         ],
         "mainFile": "src/components/molecules/Navbar/index.js",
@@ -424,29 +424,29 @@
     "guya-ltd.gcss/molecules/notification@0.0.3": {
         "files": [
             {
+                "name": "Notification.js",
                 "relativePath": "src/components/molecules/Notification/Notification.js",
-                "test": false,
-                "name": "Notification.js"
+                "test": false
             },
             {
+                "name": "NotificationContent.js",
                 "relativePath": "src/components/molecules/Notification/__Content/NotificationContent.js",
-                "test": false,
-                "name": "NotificationContent.js"
+                "test": false
             },
             {
+                "name": "NotificationContentMessage.js",
                 "relativePath": "src/components/molecules/Notification/__Content/__Message/NotificationContentMessage.js",
-                "test": false,
-                "name": "NotificationContentMessage.js"
+                "test": false
             },
             {
+                "name": "NotificationContentTitle.js",
                 "relativePath": "src/components/molecules/Notification/__Content/__Title/NotificationContentTitle.js",
-                "test": false,
-                "name": "NotificationContentTitle.js"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/molecules/Notification/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             }
         ],
         "mainFile": "src/components/molecules/Notification/index.js",
