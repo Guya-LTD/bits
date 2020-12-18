@@ -724,6 +724,85 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "guya-ltd.gcss/templates/panel@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/templates/Panel/Panel.js",
+                "test": false,
+                "name": "Panel.js"
+            },
+            {
+                "relativePath": "src/components/templates/Panel/PanelContainer.js",
+                "test": false,
+                "name": "PanelContainer.js"
+            },
+            {
+                "relativePath": "src/components/templates/Panel/PanelContainerBody.js",
+                "test": false,
+                "name": "PanelContainerBody.js"
+            },
+            {
+                "relativePath": "src/components/templates/Panel/PanelContainerFooter.js",
+                "test": false,
+                "name": "PanelContainerFooter.js"
+            },
+            {
+                "relativePath": "src/components/templates/Panel/PanelContainerHeader.js",
+                "test": false,
+                "name": "PanelContainerHeader.js"
+            },
+            {
+                "relativePath": "src/components/templates/Panel/PanelContainerView.js",
+                "test": false,
+                "name": "PanelContainerView.js"
+            },
+            {
+                "relativePath": "src/components/templates/Panel/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/templates/Panel/index.js",
+        "trackDir": "src/components/templates/Panel",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "guya-ltd.gcss/templates/shophome@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/templates/ShopHome/ShopHome.js",
+                "test": false,
+                "name": "ShopHome.js"
+            },
+            {
+                "relativePath": "src/components/templates/ShopHome/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/templates/ShopHome/index.js",
+        "trackDir": "src/components/templates/ShopHome",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "guya-ltd.gcss/templates/shopview@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/templates/ShopView/ShopView.js",
+                "test": false,
+                "name": "ShopView.js"
+            },
+            {
+                "relativePath": "src/components/templates/ShopView/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/templates/ShopView/index.js",
+        "trackDir": "src/components/templates/ShopView",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "guya-ltd.gcss/templates/xpresshome@0.0.4": {
         "files": [
             {
