@@ -21,7 +21,7 @@ import { withNaming } from '@bem-react/classname'
 class ShopHome extends Component {
     render() {
         /* Props */
-        const{header, notification, hero, services, brands, products, footer}=this.props;
+        const{header, notification, hero, services, brands, products, footer, children}=this.props;
 
         return(
             <div>
@@ -31,6 +31,7 @@ class ShopHome extends Component {
                 {services}
                 {brands}
                 {products}
+                {children}
                 {footer}
             </div>
         )

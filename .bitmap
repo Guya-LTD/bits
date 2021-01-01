@@ -767,17 +767,17 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/templates/shophome@0.0.1": {
+    "guya-ltd.gcss/templates/shophome@0.0.2": {
         "files": [
             {
+                "name": "ShopHome.js",
                 "relativePath": "src/components/templates/ShopHome/ShopHome.js",
-                "test": false,
-                "name": "ShopHome.js"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/templates/ShopHome/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             }
         ],
         "mainFile": "src/components/templates/ShopHome/index.js",
