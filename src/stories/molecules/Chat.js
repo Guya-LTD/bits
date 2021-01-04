@@ -12,7 +12,7 @@ class Demo extends Component {
   
     _onMessageWasSent(message) {
       this.setState({
-        messageList: [...this.state.messageList, message]
+        messageList: [...this.state.messageList, message, {author: 'them', type: 'text', data: {text: 'dsfsdf'}}]
       })
     }
   
@@ -27,6 +27,8 @@ class Demo extends Component {
         })
       }
     }
+
+    
   
     render() {
       return (<div>

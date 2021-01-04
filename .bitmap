@@ -767,7 +767,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "guya-ltd.gcss/templates/shophome@0.0.1": {
+    "guya-ltd.gcss/templates/shophome@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/templates/ShopHome/ShopHome.js",
