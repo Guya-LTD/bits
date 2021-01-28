@@ -1,0 +1,527 @@
+/**
+ * A Blockquote component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Button component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component
+ * @name BlockquoteBody
+ * @private
+ * @example 
+ */
+
+/**
+ * A Blockquote component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Button component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component
+ * @name BlockquoteFooter
+ * @private
+ * @example 
+ */
+
+/**
+ * A Blockquote component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Button component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component
+ * @name PanelBody
+ * @private
+ * @example 
+ */
+
+/**
+ * A Blockquote component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Button component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component 
+ * @name NotificationContent
+ * @private
+ * @example 
+ */
+
+/**
+ * A Blockquote component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Button component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component 
+ * @name NotificationContentMessage
+ * @private
+ * @example 
+ */
+
+/**
+ * A Blockquote component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Button component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component Blockquote
+ * @name Blockquote
+ * @private
+ * @example 
+ */
+
+/**
+ * A Button component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Button component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component Button
+ * @name Button
+ * @private
+ * @example 
+ */
+
+/**
+ * A Button's Icon component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Button's Icon component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component
+ * @name ButtonIcon
+ * @private
+ * @example 
+ */
+
+/**
+ * A CardBody component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A CardBody component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component 
+ * @name CardBody
+ * @private
+ * @example 
+ */
+
+/**
+ * A CardFooter component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A CardFooter component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component 
+ * @name CardFooter
+ * @private
+ * @example 
+ */
+
+/**
+ * A CardHeader component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A CardImage component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component 
+ * @name CardHeader
+ * @private
+ * @example 
+ */
+
+/**
+ * A Field component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Field component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component Field
+ * @name Field
+ * @private
+ * @example 
+ */
+
+/**
+ * A Field's Addon component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Field's Addon component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component
+ * @name FieldAddon
+ * @private
+ * @example 
+ */
+
+/**
+ * A Field's Description component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Field's Description component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component
+ * @name FieldDescription
+ * @private
+ * @example 
+ */
+
+/**
+ * A Layout component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Layout component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component Login
+ * @name Login
+ * @private
+ * @example 
+ */
+
+/**
+ * A Login template body component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Login template body component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component 
+ * @name LoginBody
+ * @private
+ * @example 
+ */
+
+/**
+ * A Login template footer component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Login template footer component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component 
+ * @name LoginFooter
+ * @private
+ * @example 
+ */
+
+/**
+ * A LoginFooterLeft template footer component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A LoginFooterLeft template footer component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component 
+ * @name LoginFooterLeft
+ * @private
+ * @example 
+ */
+
+/**
+ * A LoginFooterRight template footer component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A LoginFooterRight template footer component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component 
+ * @name LoginFooterRight
+ * @private
+ * @example 
+ */
+
+/**
+ * A Navbar brand component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Navbar brand component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component 
+ * @name NavbarBrand
+ * @private
+ * @example 
+ */
+
+/**
+ * A Navbar brand large component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description  A Navbar brand large component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component 
+ * @name NavbarBrandLarge
+ * @private
+ * @example 
+ */
+
+/**
+ * A Navbar component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Navbar component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component Navbar
+ * @name Navbar
+ * @private
+ * @example 
+ */
+
+/**
+ * A Navbar menu left component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description  A Navbar menu left component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component 
+ * @name NavbarMenuLeft
+ * @private
+ * @example 
+ */
+
+/**
+ * A Navbar menu right component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description  A Navbar menu right component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component 
+ * @name NavbarMenuRight
+ * @private
+ * @example 
+ */
+
+/**
+ * A Navbar menus component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Navbar menus component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component 
+ * @name NavbarBrand
+ * @private
+ * @example 
+ */
+
+/**
+ * A Sidebar brand component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Sidebar brand component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component 
+ * @name SidebarBrand
+ * @private
+ * @example 
+ */
+
+/**
+ * A Sidebar component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Sidebar component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component Sidebar
+ * @name Sidebar
+ * @private
+ * @example 
+ */
+
+/**
+ * A Typography H1 component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Typography H1 component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component
+ * @name TypographyH1
+ * @private
+ * @example 
+ */
+
+/**
+ * A Typography H2 component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Typography H2 component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component
+ * @name TypographyH2
+ * @private
+ * @example 
+ */
+
+/**
+ * A Typography H4 component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Typography H4 component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component
+ * @name TypographyH4
+ * @private
+ * @example 
+ */
+
+/**
+ * A Typography H5 component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Typography H5 component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component
+ * @name TypographyH5
+ * @private
+ * @example 
+ */
+
+/**
+ * A Typography H6 component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Typography H6 component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component
+ * @name TypographyH6
+ * @private
+ * @example 
+ */
+
+/**
+ * A Typography component represents an object or entity.
+ * 
+ * @author [Simon Belete](https://github.com/Simonbelete)
+ * @license [MIT](https://opensource.org/licenses/MIT)
+ * @project Guya E-commerce & Guya Express
+ * @see [Github](https://github.com/Guya-LTD/bits)
+ * @see [Bit.dev](https://bit.dev/guya-ltd/gcss)
+ * @description A Typography component represents an object or entity.
+ * @version Uses @bit [Semver v2.0.0](https://semver.org/spec/v2.0.0.html)
+ * @component Typography
+ * @name Typography
+ * @private
+ * @example 
+ */
